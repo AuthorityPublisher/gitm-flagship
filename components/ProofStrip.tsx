@@ -4,7 +4,7 @@ const proofPoints = [
   { label: "Dean Chitren Partnership", value: "$380K+" },
   { label: "TCF Generated", value: "$27K" },
   { label: "RTD Subscribers", value: "17,000+" },
-  { label: "Dr. Nick Instagram", value: "156K" },
+  { label: "Dr. Nick Instagram", value: "297K" },
   { label: "Objection Box Elite", value: "#1 All-Time" },
   { label: "Education Invested", value: "$250K+" },
   { label: "Patients Treated", value: "10,000+" },

@@ -25,7 +25,7 @@ const proofPoints = [
   { label: "Dean Chitren partnership", value: "$380K+" },
   { label: "TCF generated", value: "$27K" },
   { label: "RTD email subscribers", value: "17,000+" },
-  { label: "Dr. Nick Instagram", value: "156K followers" },
+  { label: "Dr. Nick Instagram", value: "297K followers" },
   { label: "PRM proven buyers", value: "321" },
   { label: "PRM YouTube testimonials", value: "30+ videos" },
   { label: "PRM global reach", value: "Dubai, Phoenix racehorses" },
@@ -71,8 +71,78 @@ export default function ResultsPage() {
             subtitle="These are not hypotheticals. Each business was built, launched, and is generating real revenue right now."
           />
 
-          {/* ---- Case 1: RTD ---- */}
-          <div className="mt-20 grid items-center gap-12 lg:grid-cols-2">
+          {/* ---- Case 1: DR. NICK (FEATURED - INFLUENCER) ---- */}
+          <div className="mt-20 rounded-2xl border-2 border-gold/30 bg-white p-8 sm:p-12 shadow-lg">
+            <div className="grid items-center gap-12 lg:grid-cols-2">
+              <div>
+                <span className="inline-flex items-center gap-2 rounded-full bg-gold/10 px-4 py-1.5 text-xs font-bold uppercase tracking-widest text-gold-dark">
+                  <span className="h-2 w-2 rounded-full bg-gold animate-pulse" />
+                  Featured Deployment
+                </span>
+                <h3 className="mt-4 font-[family-name:var(--font-playfair)] text-3xl font-bold text-navy sm:text-4xl">
+                  Dr. Nick - Metabolic Sleep
+                </h3>
+                <p className="mt-2 text-base font-medium text-gold-dark">
+                  The Fittest Doc - 297K Instagram followers
+                </p>
+                <p className="mt-4 text-base leading-relaxed text-muted-foreground">
+                  Complete digital ecosystem built from scratch for a doctor with
+                  a massive following but no monetization infrastructure. The Ghost
+                  Factory deployed a Whop store with a three-tier offer stack: $27
+                  core program, $47 group Zoom coaching, and $150 private calls.
+                  From zero digital products to a fully operational storefront.
+                </p>
+                <div className="mt-6 flex flex-wrap gap-4">
+                  <span className="rounded-lg bg-navy px-4 py-2 text-sm font-semibold text-gold">
+                    297K followers
+                  </span>
+                  <span className="rounded-lg bg-navy px-4 py-2 text-sm font-semibold text-gold">
+                    3-tier offer stack
+                  </span>
+                  <span className="rounded-lg bg-navy px-4 py-2 text-sm font-semibold text-gold">
+                    Built from scratch
+                  </span>
+                </div>
+                <div className="mt-6 flex flex-wrap gap-4">
+                  <a
+                    href="https://www.instagram.com/thefittestdoc/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-1 text-sm font-semibold text-navy hover:text-gold-dark transition-colors"
+                  >
+                    @thefittestdoc &rarr;
+                  </a>
+                  <a
+                    href="https://whop.com/metabolicsleep"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-1 text-sm font-semibold text-navy hover:text-gold-dark transition-colors"
+                  >
+                    Whop Store &rarr;
+                  </a>
+                  <a
+                    href="https://metabolicsleep.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-1 text-sm font-semibold text-navy hover:text-gold-dark transition-colors"
+                  >
+                    metabolicsleep.com &rarr;
+                  </a>
+                </div>
+              </div>
+              <div>
+                <VidalyticsEmbed videoId="JHNBBRwjatnIdLG8" />
+                <p className="mt-2 text-center text-xs text-muted-foreground">
+                  Dr. Nick - The Fittest Doc - Metabolic Sleep
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div className="section-divider my-16" />
+
+          {/* ---- Case 2: RTD ---- */}
+          <div className="grid items-center gap-12 lg:grid-cols-2">
             <div>
               <span className="inline-block rounded-full bg-gold/10 px-3 py-1 text-xs font-bold uppercase tracking-widest text-gold-dark">
                 Weight Loss Coaching
@@ -120,7 +190,90 @@ export default function ResultsPage() {
 
           <div className="section-divider my-16" />
 
-          {/* ---- Case 2: TCF ---- */}
+          {/* ---- Case 3: Dean Chitren ---- */}
+          <div className="grid items-center gap-12 lg:grid-cols-2">
+            <div>
+              <span className="inline-block rounded-full bg-gold/10 px-3 py-1 text-xs font-bold uppercase tracking-widest text-gold-dark">
+                High-Ticket Golf
+              </span>
+              <h3 className="mt-4 font-[family-name:var(--font-playfair)] text-3xl font-bold text-navy">
+                Dean Chitren - Low 70s Golf
+              </h3>
+              <p className="mt-2 text-sm font-medium text-gold-dark">
+                6-7 year partnership
+              </p>
+              <p className="mt-4 text-base leading-relaxed text-muted-foreground">
+                Jason was tip of the spear for this high-ticket golf coaching
+                operation, engineering the entire funnel from lead capture to
+                $10K-$17K program enrollment. Over six to seven years, the
+                partnership generated more than $380K. This same infrastructure
+                model later deployed Chase Cooper&apos;s Golf Breath Mastery,
+                combining veteran discipline with breath work for golfers.
+              </p>
+              <div className="mt-6 flex flex-wrap gap-4">
+                <span className="rounded-lg bg-navy px-4 py-2 text-sm font-semibold text-gold">
+                  $380K+ generated
+                </span>
+                <span className="rounded-lg bg-navy px-4 py-2 text-sm font-semibold text-gold">
+                  $10K-$17K programs
+                </span>
+                <span className="rounded-lg bg-navy px-4 py-2 text-sm font-semibold text-gold">
+                  6-7 year run
+                </span>
+              </div>
+              <div className="mt-4 flex flex-wrap gap-4">
+                <a
+                  href="https://droptenstrokes.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-1 text-sm font-semibold text-navy hover:text-gold-dark transition-colors"
+                >
+                  droptenstrokes.com &rarr;
+                </a>
+                <a
+                  href="https://golfbreathmastery.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-1 text-sm font-semibold text-navy hover:text-gold-dark transition-colors"
+                >
+                  golfbreathmastery.com &rarr;
+                </a>
+              </div>
+            </div>
+            <div className="order-first lg:order-last">
+              <div className="rounded-2xl border border-border bg-card p-8 shadow-sm">
+                <p className="font-[family-name:var(--font-playfair)] text-5xl font-bold text-navy text-center">
+                  $380K+
+                </p>
+                <p className="mt-2 text-center text-sm text-muted-foreground">
+                  Generated over 6-7 year partnership
+                </p>
+                <div className="section-divider my-6" />
+                <div className="space-y-4">
+                  <div>
+                    <p className="text-sm font-semibold text-navy">
+                      Dean Chitren - Low 70s Golf
+                    </p>
+                    <p className="text-sm text-muted-foreground">
+                      High-ticket golf coaching. $10K-$17K programs.
+                    </p>
+                  </div>
+                  <div>
+                    <p className="text-sm font-semibold text-navy">
+                      Chase Cooper - Golf Breath Mastery
+                    </p>
+                    <p className="text-sm text-muted-foreground">
+                      Veteran. Breath work for golfers.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="section-divider my-16" />
+
+          {/* ---- Case 4: TCF ---- */}
           <div className="grid items-center gap-12 lg:grid-cols-2">
             <div className="order-2 lg:order-1">
               <div className="rounded-2xl border border-border bg-card p-8 shadow-sm">
@@ -188,146 +341,14 @@ export default function ResultsPage() {
                   Two-funnel system
                 </span>
               </div>
-            </div>
-          </div>
-
-          <div className="section-divider my-16" />
-
-          {/* ---- Case 3: Dr. Nick ---- */}
-          <div className="grid items-center gap-12 lg:grid-cols-2">
-            <div>
-              <span className="inline-block rounded-full bg-gold/10 px-3 py-1 text-xs font-bold uppercase tracking-widest text-gold-dark">
-                Digital Health
-              </span>
-              <h3 className="mt-4 font-[family-name:var(--font-playfair)] text-3xl font-bold text-navy">
-                Dr. Nick - Metabolic Sleep
-              </h3>
-              <p className="mt-2 text-sm font-medium text-gold-dark">
-                The Fittest Doc - 156K Instagram followers
-              </p>
-              <p className="mt-4 text-base leading-relaxed text-muted-foreground">
-                Complete digital ecosystem built from scratch for a doctor with
-                a massive following but no monetization infrastructure. The Ghost
-                Factory deployed a Whop store with a three-tier offer stack: $27
-                core program, $47 group Zoom coaching, and $150 private calls.
-                From zero digital products to a fully operational storefront.
-              </p>
-              <div className="mt-6 flex flex-wrap gap-4">
-                <span className="rounded-lg bg-navy px-4 py-2 text-sm font-semibold text-gold">
-                  156K followers
-                </span>
-                <span className="rounded-lg bg-navy px-4 py-2 text-sm font-semibold text-gold">
-                  3-tier offer stack
-                </span>
-                <span className="rounded-lg bg-navy px-4 py-2 text-sm font-semibold text-gold">
-                  Built from scratch
-                </span>
-              </div>
-              <div className="mt-4 flex flex-wrap gap-4">
-                <a
-                  href="https://whop.com/metabolicsleep"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center gap-1 text-sm font-semibold text-navy hover:text-gold-dark transition-colors"
-                >
-                  Whop Store &rarr;
-                </a>
-                <a
-                  href="https://metabolicsleep.com"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center gap-1 text-sm font-semibold text-navy hover:text-gold-dark transition-colors"
-                >
-                  metabolicsleep.com &rarr;
-                </a>
-              </div>
-            </div>
-            <div>
-              <VidalyticsEmbed videoId="JHNBBRwjatnIdLG8" />
-              <p className="mt-2 text-center text-xs text-muted-foreground">
-                Dr. Nick - Metabolic Sleep
-              </p>
-            </div>
-          </div>
-
-          <div className="section-divider my-16" />
-
-          {/* ---- Case 4: Dean Chitren ---- */}
-          <div className="grid items-center gap-12 lg:grid-cols-2">
-            <div className="order-2 lg:order-1">
-              <div className="rounded-2xl border border-border bg-card p-8 shadow-sm">
-                <p className="font-[family-name:var(--font-playfair)] text-5xl font-bold text-navy text-center">
-                  $380K+
-                </p>
-                <p className="mt-2 text-center text-sm text-muted-foreground">
-                  Generated over 6-7 year partnership
-                </p>
-                <div className="section-divider my-6" />
-                <div className="space-y-4">
-                  <div>
-                    <p className="text-sm font-semibold text-navy">
-                      Dean Chitren - Low 70s Golf
-                    </p>
-                    <p className="text-sm text-muted-foreground">
-                      High-ticket golf coaching. $10K-$17K programs.
-                    </p>
-                    <a
-                      href="https://droptenstrokes.com"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-xs font-semibold text-gold-dark hover:text-navy transition-colors"
-                    >
-                      droptenstrokes.com &rarr;
-                    </a>
-                  </div>
-                  <div>
-                    <p className="text-sm font-semibold text-navy">
-                      Chase Cooper - Golf Breath Mastery
-                    </p>
-                    <p className="text-sm text-muted-foreground">
-                      Veteran. Breath work for golfers.
-                    </p>
-                    <a
-                      href="https://golfbreathmastery.com"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-xs font-semibold text-gold-dark hover:text-navy transition-colors"
-                    >
-                      golfbreathmastery.com &rarr;
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="order-1 lg:order-2">
-              <span className="inline-block rounded-full bg-gold/10 px-3 py-1 text-xs font-bold uppercase tracking-widest text-gold-dark">
-                High-Ticket Golf
-              </span>
-              <h3 className="mt-4 font-[family-name:var(--font-playfair)] text-3xl font-bold text-navy">
-                Dean Chitren - Low 70s Golf
-              </h3>
-              <p className="mt-2 text-sm font-medium text-gold-dark">
-                6-7 year partnership
-              </p>
-              <p className="mt-4 text-base leading-relaxed text-muted-foreground">
-                Jason was tip of the spear for this high-ticket golf coaching
-                operation, engineering the entire funnel from lead capture to
-                $10K-$17K program enrollment. Over six to seven years, the
-                partnership generated more than $380K. This same infrastructure
-                model later deployed Chase Cooper&apos;s Golf Breath Mastery,
-                combining veteran discipline with breath work for golfers.
-              </p>
-              <div className="mt-6 flex flex-wrap gap-4">
-                <span className="rounded-lg bg-navy px-4 py-2 text-sm font-semibold text-gold">
-                  $380K+ generated
-                </span>
-                <span className="rounded-lg bg-navy px-4 py-2 text-sm font-semibold text-gold">
-                  $10K-$17K programs
-                </span>
-                <span className="rounded-lg bg-navy px-4 py-2 text-sm font-semibold text-gold">
-                  6-7 year run
-                </span>
-              </div>
+              <a
+                href="https://thecleanupfirm.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-6 inline-flex items-center gap-1 text-sm font-semibold text-navy hover:text-gold-dark transition-colors"
+              >
+                Visit thecleanupfirm.com &rarr;
+              </a>
             </div>
           </div>
 

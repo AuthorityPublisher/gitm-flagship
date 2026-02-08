@@ -397,7 +397,7 @@ export default function Home() {
               quote="The Ghost Factory built my entire digital presence - website, funnels, email sequences, video hosting - while I focused on treating patients. I went from scattered ideas to a complete online business in weeks."
               name="Dr. Nick"
               role="Health & Wellness Influencer"
-              metric="156K Followers"
+              metric="297K Followers"
             />
 
             <TestimonialCard

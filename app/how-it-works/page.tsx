@@ -62,7 +62,7 @@ const stages = [
     description:
       "Not every deployment needs recruitment. But when it does, we find the expert, the influencer, or the partner who becomes the public face. 50/50 JV, zero upfront.",
     proof:
-      "We work with 156K-follower doctors, veteran breath work coaches, and forensic bookkeepers.",
+      "We work with 297K-follower doctors, veteran breath work coaches, and forensic bookkeepers.",
   },
   {
     number: 6,
