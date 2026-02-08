@@ -20,7 +20,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "The Ghost Factory | You bring the fire. We build the furnace.",
+  title: "The Ghost Factory | You bring the expertise. We deploy the machine.",
   description:
     "Drop anything in. Get a business out. The Ghost Factory deploys scalable, exit-ready businesses for experts, influencers, and visionary entrepreneurs.",
   keywords: [
@@ -31,7 +31,7 @@ export const metadata: Metadata = {
     "done for you business",
   ],
   openGraph: {
-    title: "The Ghost Factory | You bring the fire. We build the furnace.",
+    title: "The Ghost Factory | You bring the expertise. We deploy the machine.",
     description:
       "Drop anything in. Get a business out. AI-powered business deployment for experts and visionaries.",
     url: "https://gitm.ai",

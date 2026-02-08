@@ -10,32 +10,47 @@ const pricingTiers = [
   {
     name: "Go/No-Go Assessment",
     price: "$97",
+    badge: "Start Here",
+    whoFor: "Anyone considering a deployment",
     description:
-      "Full deployment readiness diagnostic. See everything your deployment requires - positioning, tech, copy, automation, compliance. Most people buy this and immediately book DFY because they see the full scope of what needs to happen.",
+      "Full deployment readiness diagnostic. See everything your deployment requires: positioning, tech, copy, automation, compliance. Most people see the scope and immediately book DFY.",
+    highlighted: false,
   },
   {
     name: "Ghost Sprint",
     price: "$2,500",
+    badge: "",
+    whoFor: "Entrepreneurs who want to build alongside Jason",
     description:
-      "DNA extraction, market validation, positioning framework, MVP landing page, and go/no-go assessment. 30-day done-with-you sprint with Jason. You leave with a working deployment.",
+      "DNA extraction, market validation, positioning framework, and MVP microsite. 30-day done-with-you sprint. You leave with a working deployment, not a binder full of homework.",
+    highlighted: false,
   },
   {
     name: "Ghost Launch",
     price: "$7,500 - $15,000",
+    badge: "Most Popular",
+    whoFor: "Business owners ready for full done-for-you deployment",
     description:
       "Full website, email automation, affiliate program, lead magnet, Stripe integration, VSL production, compliance review, and 30-day post-launch optimization. The complete deployment.",
+    highlighted: true,
   },
   {
     name: "Ghost Scale",
     price: "$5,000/month",
+    badge: "",
+    whoFor: "Live deployments that need sustained growth",
     description:
-      "Monthly optimization, affiliate recruitment, content multiplication, paid traffic management, and conversion rate optimization. For live deployments that need sustained growth.",
+      "Monthly optimization, affiliate recruitment, content multiplication, paid traffic management, and conversion rate optimization. For businesses already generating revenue.",
+    highlighted: false,
   },
   {
     name: "Ghost Empire",
     price: "$25,000 - $50,000 + equity",
+    badge: "",
+    whoFor: "Serious ventures building for acquisition or exit",
     description:
       "Complete exit-ready venture. Multi-tier value ladder, investor-ready documentation, full team deployment, and equity partnership. Built to sell from day one.",
+    highlighted: false,
   },
 ];
 
@@ -140,7 +155,7 @@ export default function ApplyPage() {
                   : "text-muted-foreground hover:bg-warm-dark"
               }`}
             >
-              Pay for Deployment
+              Business Owner (Paid)
             </button>
             <button
               type="button"
@@ -151,7 +166,7 @@ export default function ApplyPage() {
                   : "text-muted-foreground hover:bg-warm-dark"
               }`}
             >
-              Performance Partnership
+              Influencer Partnership (JV)
             </button>
           </div>
 
@@ -168,16 +183,30 @@ export default function ApplyPage() {
                 {pricingTiers.map((tier) => (
                   <div
                     key={tier.name}
-                    className="rounded-xl border border-border bg-white p-6 shadow-sm transition-all hover:border-gold/30 hover:shadow-md"
+                    className={`rounded-xl border-2 bg-white p-6 shadow-sm transition-all hover:shadow-md ${
+                      tier.highlighted
+                        ? "border-gold/50 ring-2 ring-gold/20"
+                        : "border-border hover:border-gold/30"
+                    }`}
                   >
                     <div className="flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between">
-                      <h3 className="font-[family-name:var(--font-playfair)] text-xl font-bold text-navy">
-                        {tier.name}
-                      </h3>
+                      <div className="flex items-center gap-3">
+                        <h3 className="font-[family-name:var(--font-playfair)] text-xl font-bold text-navy">
+                          {tier.name}
+                        </h3>
+                        {tier.badge && (
+                          <span className="rounded-full bg-navy px-3 py-0.5 text-xs font-bold uppercase tracking-wider text-gold">
+                            {tier.badge}
+                          </span>
+                        )}
+                      </div>
                       <span className="inline-flex shrink-0 rounded-full border border-gold/30 bg-gold/10 px-4 py-1 text-sm font-bold text-gold-dark">
                         {tier.price}
                       </span>
                     </div>
+                    <p className="mt-1 text-xs font-medium uppercase tracking-wider text-gold-dark/70">
+                      {tier.whoFor}
+                    </p>
                     <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
                       {tier.description}
                     </p>
@@ -200,8 +229,8 @@ export default function ApplyPage() {
             <div className="mt-12">
               <SectionHeading
                 eyebrow="Track 2"
-                title="Performance Partnership (JV)"
-                subtitle="Zero upfront cost. We build. You bring the audience. Revenue is split 50/50."
+                title="Influencer Partnership (JV)"
+                subtitle="You've built the audience. We'll build the revenue. Zero upfront cost. We only win when you win."
               />
 
               <div className="mx-auto mt-12 max-w-3xl">
@@ -217,38 +246,64 @@ export default function ApplyPage() {
                     </div>
                     <div className="rounded-lg bg-warm p-5">
                       <p className="text-sm font-semibold uppercase tracking-wider text-gold-dark">
-                        Upfront Cost
+                        Your Cost
                       </p>
                       <p className="mt-1 font-[family-name:var(--font-playfair)] text-2xl font-bold text-navy">
-                        Zero
+                        $0
                       </p>
                     </div>
                     <div className="rounded-lg bg-warm p-5">
                       <p className="text-sm font-semibold uppercase tracking-wider text-gold-dark">
-                        Requirement
+                        The Ghost Factory Builds
                       </p>
                       <p className="mt-1 text-sm font-medium text-navy">
-                        Responsive audience or list
+                        Product, funnel, automation, copy, optimization
                       </p>
                     </div>
                     <div className="rounded-lg bg-warm p-5">
                       <p className="text-sm font-semibold uppercase tracking-wider text-gold-dark">
-                        Ghost Handles
+                        You Bring
                       </p>
-                      <p className="mt-1 font-[family-name:var(--font-playfair)] text-2xl font-bold text-navy">
-                        90%
+                      <p className="mt-1 text-sm font-medium text-navy">
+                        Your audience, your expertise, your content
                       </p>
                     </div>
                   </div>
 
                   <div className="mt-8 border-t border-border pt-6">
-                    <p className="text-base leading-relaxed text-muted-foreground">
-                      This is the MVP validation model: test with real money
-                      first, then scale. We build the positioning, the copy, the
-                      funnel, the automation. You show up with your audience and
-                      your expertise. If it works, we scale together. If it does
-                      not, we part as friends with real data instead of
-                      assumptions.
+                    <h4 className="text-sm font-semibold uppercase tracking-wider text-navy">
+                      Who Qualifies
+                    </h4>
+                    <ul className="mt-3 space-y-2 text-sm text-muted-foreground">
+                      <li className="flex items-start gap-2">
+                        <span className="mt-0.5 text-gold">+</span>
+                        50K+ followers on Instagram, TikTok, or YouTube
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="mt-0.5 text-gold">+</span>
+                        3%+ engagement rate (engaged followers, not vanity numbers)
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="mt-0.5 text-gold">+</span>
+                        A transformative message, method, or process
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="mt-0.5 text-gold">+</span>
+                        Healthcare practitioners, coaches, or experts with an audience
+                      </li>
+                    </ul>
+                  </div>
+
+                  <div className="mt-6 border-t border-border pt-6">
+                    <h4 className="text-sm font-semibold uppercase tracking-wider text-navy">
+                      How It Works
+                    </h4>
+                    <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+                      14 days to validate. 30-45 days to build. Launch. We test
+                      with real money first, then scale. If it works, we grow
+                      together. If it does not, we part as friends with real data
+                      instead of assumptions. In 2 years, this becomes a
+                      sellable asset.
                     </p>
                   </div>
                 </div>
@@ -346,7 +401,7 @@ export default function ApplyPage() {
                     onChange={() => handleTrackChange("pay")}
                     className="h-4 w-4 border-border text-gold accent-gold focus:ring-gold"
                   />
-                  Pay for Deployment
+                  Business Owner (Paid)
                 </label>
                 <label className="flex items-center gap-2 text-sm text-navy cursor-pointer">
                   <input
@@ -357,7 +412,7 @@ export default function ApplyPage() {
                     onChange={() => handleTrackChange("jv")}
                     className="h-4 w-4 border-border text-gold accent-gold focus:ring-gold"
                   />
-                  Performance Partnership
+                  Influencer Partnership (JV)
                 </label>
               </div>
             </fieldset>

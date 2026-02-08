@@ -354,18 +354,24 @@ export default function ResultsPage() {
 
           <div className="section-divider my-16" />
 
-          {/* ---- Cases 5, 6, 7: Video Testimonials + Quote ---- */}
+          {/* ---- Video Testimonials ---- */}
           <div>
             <SectionHeading
               eyebrow="Testimonials"
               title="Straight from the People We Deployed"
             />
-            <div className="mt-12 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
-              <TestimonialCard
-                quote="Got us redirected to really get out there and sell our high-ticket radical change coaching program to a million people."
-                name="Dr. Mary Oz"
-                role="Radical Change Coaching"
-              />
+            <div className="mt-12 grid gap-8 sm:grid-cols-2">
+              <div className="rounded-2xl border border-border bg-card p-6 shadow-sm transition-shadow hover:shadow-md">
+                <VidalyticsEmbed videoId="3i0AVgTUpnugjz3p" />
+                <div className="mt-4">
+                  <p className="font-semibold text-foreground">
+                    Alan &amp; Angie Thomas
+                  </p>
+                  <p className="text-sm text-muted-foreground">
+                    Full Testimonial - Rethink Dieting
+                  </p>
+                </div>
+              </div>
               <div className="rounded-2xl border border-border bg-card p-6 shadow-sm transition-shadow hover:shadow-md">
                 <VidalyticsEmbed videoId="SWp0vVcooYFoRAsD" />
                 <div className="mt-4">
@@ -386,6 +392,11 @@ export default function ResultsPage() {
                   </p>
                 </div>
               </div>
+              <TestimonialCard
+                quote="Got us redirected to really get out there and sell our high-ticket radical change coaching program to a million people."
+                name="Dr. Mary Oz"
+                role="Radical Change Coaching"
+              />
             </div>
           </div>
         </div>

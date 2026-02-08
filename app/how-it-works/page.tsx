@@ -288,23 +288,18 @@ export default function HowItWorksPage() {
           />
 
           <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row sm:gap-6">
-            <Link
-              href="/apply"
-              className="gold-gradient inline-flex items-center justify-center rounded-lg px-8 py-4 text-base font-semibold text-navy transition-all hover:shadow-lg hover:shadow-gold/20"
-            >
-              $97 Go/No-Go Assessment
-            </Link>
             <CalendlyButton
-              text="Book a Call"
-              variant="outline"
+              text="Book a Strategy Call"
+              variant="gold"
               size="lg"
             />
+            <Link
+              href="/score"
+              className="inline-flex items-center justify-center rounded-lg border-2 border-navy px-8 py-4 text-base font-semibold text-navy transition-all hover:bg-navy hover:text-white"
+            >
+              Take the Execution Gap Score
+            </Link>
           </div>
-
-          <p className="mt-6 text-sm text-muted-foreground">
-            The assessment shows you the full deployment scope for your specific
-            idea. Most people see it and realize they need DFY.
-          </p>
         </div>
       </section>
     </div>

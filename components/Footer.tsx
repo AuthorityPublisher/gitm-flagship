@@ -48,7 +48,7 @@ export function Footer() {
               The Ghost Factory
             </h3>
             <p className="mt-2 text-sm leading-relaxed text-white/60">
-              You bring the fire. We build the furnace.
+              You bring the expertise. We deploy the machine.
             </p>
             <p className="mt-4 text-sm italic text-gold/80">
               &ldquo;Seek first his kingdom and his righteousness, and all these

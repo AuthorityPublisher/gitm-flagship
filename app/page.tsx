@@ -25,13 +25,16 @@ export default function Home() {
 
             {/* Main headline */}
             <h1 className="mx-auto mt-6 max-w-4xl text-center font-[family-name:var(--font-playfair)] text-4xl font-bold leading-tight tracking-tight text-white sm:text-5xl lg:text-6xl">
-              You bring the fire.{" "}
-              <span className="text-gold-gradient">We build the furnace.</span>
+              You bring the expertise.{" "}
+              <span className="text-gold-gradient">
+                We deploy the machine.
+              </span>
             </h1>
 
             <p className="mx-auto mt-6 max-w-2xl text-center text-lg leading-relaxed text-white/70">
-              Drop anything in - an idea, a skill, a following, a half-built
-              business. We deploy the infrastructure that turns it into revenue.
+              An idea, a skill, a following, a half-built business. Drop it
+              in. We build the positioning, the copy, the funnels, the tech,
+              and the automation. You handle 10%. We handle 90%.
             </p>
 
             {/* Three Paths */}
@@ -44,10 +47,10 @@ export default function Home() {
                 <h3 className="font-[family-name:var(--font-playfair)] text-lg font-bold text-white">
                   The Visionary
                 </h3>
-                <p className="mt-3 text-sm leading-relaxed text-white/60 italic">
-                  &ldquo;I never thought I had executive function challenges. I
-                  just thought everyone had to fight this hard to follow
-                  through.&rdquo;
+                <p className="mt-3 text-sm leading-relaxed text-white/60">
+                  You see the entire system in one flash, then can&apos;t
+                  remember to send the follow-up email. Your brain isn&apos;t
+                  broken. Your infrastructure is.
                 </p>
                 <Link
                   href="/score"
@@ -66,8 +69,9 @@ export default function Home() {
                   The Operator
                 </h3>
                 <p className="mt-3 text-sm leading-relaxed text-white/60">
-                  Drop anything in. Get a business out. You have the expertise.
-                  We build the machine around it.
+                  You have the expertise and the clients. You need the
+                  digital infrastructure to scale beyond trading hours for
+                  dollars.
                 </p>
                 <Link
                   href="/how-it-works"
@@ -86,8 +90,9 @@ export default function Home() {
                   The Partner
                 </h3>
                 <p className="mt-3 text-sm leading-relaxed text-white/60">
-                  Have an audience? Let&apos;s build something together. Your
-                  reach, our infrastructure, shared upside.
+                  You&apos;ve built the audience. We&apos;ll build the
+                  revenue. No upfront cost. 50/50 split. We only win when
+                  you win.
                 </p>
                 <Link
                   href="/partner"
@@ -428,21 +433,21 @@ export default function Home() {
               metric="#1 All Leaderboards"
             />
 
-            <div className="flex flex-col items-center justify-center rounded-2xl border border-dashed border-gold/40 bg-gold/5 p-6 text-center">
+            <Link
+              href="/results"
+              className="flex flex-col items-center justify-center rounded-2xl border border-dashed border-gold/40 bg-gold/5 p-6 text-center transition-all hover:border-gold/60 hover:bg-gold/10"
+            >
               <p className="font-[family-name:var(--font-playfair)] text-xl font-bold text-navy">
-                Your Deployment Here
+                See All Case Studies
               </p>
               <p className="mt-2 text-sm text-muted-foreground">
-                We take on a limited number of deployments at a time. Each one
-                gets our full attention.
+                Full deployments, video testimonials, and the complete
+                scorecard.
               </p>
-              <CalendlyButton
-                text="Apply Now"
-                variant="gold"
-                size="sm"
-                className="mt-4"
-              />
-            </div>
+              <span className="mt-4 text-sm font-semibold text-gold-dark">
+                View Results &rarr;
+              </span>
+            </Link>
           </div>
         </div>
       </section>
@@ -484,92 +489,40 @@ export default function Home() {
             </p>
 
             <p className="mt-10 font-[family-name:var(--font-playfair)] text-2xl font-bold text-gold">
-              You bring the fire. We build the furnace.
+              You bring the expertise. We deploy the machine.
             </p>
           </div>
         </div>
       </section>
 
       {/* ============================================
-          SECTION 7: FINAL CTA - Three Paths Repeated
+          SECTION 7: FINAL CTA
           ============================================ */}
       <section className="bg-white py-20 sm:py-28">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div className="mx-auto max-w-3xl px-4 text-center sm:px-6 lg:px-8">
           <SectionHeading
             eyebrow="Your Next Step"
-            title="Three Ways In"
-            subtitle="Wherever you are right now, there is a path forward. Pick the one that fits."
+            title="Ready to Deploy?"
+            subtitle="The Ghost Factory takes on a limited number of deployments at a time. If you are reading this, spots may still be available."
           />
 
-          <div className="mx-auto mt-16 grid max-w-4xl gap-8 sm:grid-cols-3">
-            {/* Path A: Score */}
-            <div className="rounded-2xl border border-border bg-warm p-8 text-center transition-all hover:border-gold/30 hover:shadow-lg">
-              <div className="mx-auto flex h-14 w-14 items-center justify-center rounded-full bg-navy">
-                <span className="text-xl font-bold text-gold">A</span>
-              </div>
-              <h3 className="mt-4 font-[family-name:var(--font-playfair)] text-xl font-bold text-navy">
-                Measure the Gap
-              </h3>
-              <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
-                Take the free Execution Gap Score. Two minutes. Immediate
-                results. See exactly where your infrastructure is leaking.
-              </p>
-              <Link
-                href="/score"
-                className="gold-gradient mt-6 inline-flex items-center justify-center rounded-lg px-6 py-3 text-sm font-semibold text-navy transition-all hover:shadow-lg hover:shadow-gold/20"
-              >
-                Take the Score
-              </Link>
-            </div>
-
-            {/* Path B: Call */}
-            <div className="rounded-2xl border border-border bg-warm p-8 text-center transition-all hover:border-gold/30 hover:shadow-lg">
-              <div className="mx-auto flex h-14 w-14 items-center justify-center rounded-full bg-navy">
-                <span className="text-xl font-bold text-gold">B</span>
-              </div>
-              <h3 className="mt-4 font-[family-name:var(--font-playfair)] text-xl font-bold text-navy">
-                Talk Strategy
-              </h3>
-              <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
-                Book a strategy call. We will assess your situation, identify
-                the fastest path to deployment, and tell you honestly if we are
-                the right fit.
-              </p>
-              <CalendlyButton
-                text="Book a Call"
-                variant="gold"
-                size="md"
-                className="mt-6"
-              />
-            </div>
-
-            {/* Path C: Partner */}
-            <div className="rounded-2xl border border-border bg-warm p-8 text-center transition-all hover:border-gold/30 hover:shadow-lg">
-              <div className="mx-auto flex h-14 w-14 items-center justify-center rounded-full bg-navy">
-                <span className="text-xl font-bold text-gold">C</span>
-              </div>
-              <h3 className="mt-4 font-[family-name:var(--font-playfair)] text-xl font-bold text-navy">
-                Partner Up
-              </h3>
-              <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
-                Have an audience, a platform, or a network? We build the
-                business. You bring the reach. Shared equity, shared upside.
-              </p>
-              <Link
-                href="/partner"
-                className="gold-gradient mt-6 inline-flex items-center justify-center rounded-lg px-6 py-3 text-sm font-semibold text-navy transition-all hover:shadow-lg hover:shadow-gold/20"
-              >
-                Explore Partnerships
-              </Link>
-            </div>
+          <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row sm:gap-6">
+            <CalendlyButton
+              text="Book a Strategy Call"
+              variant="gold"
+              size="lg"
+            />
+            <Link
+              href="/score"
+              className="inline-flex items-center justify-center rounded-lg border-2 border-navy px-8 py-4 text-base font-semibold text-navy transition-all hover:bg-navy hover:text-white"
+            >
+              Take the Execution Gap Score
+            </Link>
           </div>
 
-          {/* Final line */}
-          <p className="mx-auto mt-16 max-w-xl text-center text-sm leading-relaxed text-muted-foreground">
-            The Ghost Factory takes on a limited number of deployments at a
-            time. If you are reading this, spots may still be available. If
-            they are not, we will tell you directly and put you on the shortlist
-            for the next opening.
+          <p className="mx-auto mt-8 max-w-md text-sm text-muted-foreground">
+            Not sure yet? The Score takes two minutes and shows you exactly
+            where your infrastructure gaps are. No email required.
           </p>
         </div>
       </section>
