@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 import { SectionHeading } from "@/components/SectionHeading";
 import { CalendlyButton } from "@/components/CalendlyButton";
 import { VidalyticsEmbed } from "@/components/VidalyticsEmbed";
@@ -113,12 +114,12 @@ export default function ResultsPage() {
                     @thefittestdoc &rarr;
                   </a>
                   <a
-                    href="https://whop.com/metabolicsleep"
+                    href="https://whop.com/thefittestyou/metabolicsleep/"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-flex items-center gap-1 text-sm font-semibold text-navy hover:text-gold-dark transition-colors"
                   >
-                    Whop Store &rarr;
+                    The Fittest You (Whop) &rarr;
                   </a>
                   <a
                     href="https://metabolicsleep.com"
@@ -496,7 +497,23 @@ export default function ResultsPage() {
             subtitle="Across every vertical, every partnership, every deployment. These are the receipts."
           />
 
-          <div className="mt-12 overflow-hidden rounded-2xl border border-border bg-card shadow-sm">
+          {/* Objection Box Leaderboard Screenshot */}
+          <div className="mx-auto mb-12 mt-12 max-w-2xl">
+            <p className="mb-4 text-center text-xs font-semibold uppercase tracking-widest text-gold-dark">
+              Bill Walsh Objection Box Elite - #1 All 3 Leaderboards
+            </p>
+            <div className="overflow-hidden rounded-2xl border border-border shadow-md">
+              <Image
+                src="/images/objection-box-leaderboards.jpg"
+                alt="Jason Laird - #1 on all 3 Objection Box Elite leaderboards"
+                width={800}
+                height={600}
+                className="w-full"
+              />
+            </div>
+          </div>
+
+          <div className="overflow-hidden rounded-2xl border border-border bg-card shadow-sm">
             <table className="w-full">
               <tbody>
                 {proofPoints.map((point, i) => (

@@ -8,12 +8,8 @@ const deploymentLinks = [
 
 const youtubeLinks = [
   {
-    href: "https://youtube.com/@RisingLotusAllergy",
-    label: "Rising Lotus Wellness",
-  },
-  {
     href: "https://youtube.com/@Painreliefmiracle",
-    label: "Pain Relief Miracle",
+    label: "PRM Spray (30+ Testimonials)",
   },
 ];
 
