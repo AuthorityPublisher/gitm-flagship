@@ -8,8 +8,12 @@ const deploymentLinks = [
 
 const youtubeLinks = [
   {
-    href: "https://youtube.com/@Painreliefmiracle",
+    href: "https://www.youtube.com/@Painreliefmiracle",
     label: "PRM Spray (30+ Testimonials)",
+  },
+  {
+    href: "https://www.youtube.com/@WellnessPi",
+    label: "WellnessPI",
   },
 ];
 
