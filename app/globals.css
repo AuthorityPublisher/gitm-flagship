@@ -1,0 +1,104 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-destructive: var(--destructive);
+  --font-heading: var(--font-playfair);
+  --font-body: var(--font-inter);
+  --color-navy: #0A1628;
+  --color-navy-light: #122240;
+  --color-navy-dark: #060E1A;
+  --color-gold: #D4A843;
+  --color-gold-light: #E8C97A;
+  --color-gold-dark: #B8922E;
+  --color-warm: #F8F6F3;
+  --color-warm-dark: #EDE8E1;
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+}
+
+:root {
+  --radius: 0.625rem;
+  --background: #F8F6F3;
+  --foreground: #1A1A2E;
+  --card: #FFFFFF;
+  --card-foreground: #1A1A2E;
+  --primary: #0A1628;
+  --primary-foreground: #F8F6F3;
+  --secondary: #D4A843;
+  --secondary-foreground: #0A1628;
+  --muted: #EDE8E1;
+  --muted-foreground: #6B7280;
+  --accent: #D4A843;
+  --accent-foreground: #0A1628;
+  --border: #D1C9BD;
+  --input: #D1C9BD;
+  --ring: #D4A843;
+  --destructive: #DC2626;
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-playfair);
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.gold-gradient {
+  background: linear-gradient(135deg, #D4A843 0%, #E8C97A 50%, #D4A843 100%);
+}
+
+.gold-gradient:hover {
+  background: linear-gradient(135deg, #B8922E 0%, #D4A843 50%, #B8922E 100%);
+}
+
+.navy-gradient {
+  background: linear-gradient(180deg, #0A1628 0%, #122240 100%);
+}
+
+.text-gold-gradient {
+  background: linear-gradient(135deg, #D4A843, #E8C97A);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.section-divider {
+  height: 1px;
+  background: linear-gradient(90deg, transparent, #D4A843, transparent);
+}
+
+@keyframes scroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.animate-scroll {
+  animation: scroll 30s linear infinite;
+}
