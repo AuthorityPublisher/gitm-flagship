@@ -1,31 +1,34 @@
 "use client";
 
+import { useEffect, useRef } from "react";
+
 interface VidalyticsEmbedProps {
   videoId: string;
   className?: string;
 }
 
 export function VidalyticsEmbed({ videoId, className = "" }: VidalyticsEmbedProps) {
+  const containerRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    // The Vidalytics global script (loaded in layout.tsx) scans for
+    // divs with id="vidalytics_embed_VIDEO_ID" and injects the player.
+    // In a React SPA, components mount after the initial scan,
+    // so we trigger a rescan when this component mounts.
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    const win = window as any;
+    if (typeof win.vidalytics_embeds === "function") {
+      win.vidalytics_embeds();
+    }
+  }, [videoId]);
+
   return (
-    <div className={`aspect-video w-full overflow-hidden rounded-xl ${className}`}>
+    <div className={`w-full overflow-hidden rounded-xl ${className}`}>
       <div
+        ref={containerRef}
         id={`vidalytics_embed_${videoId}`}
         style={{ width: "100%", position: "relative", paddingTop: "56.25%" }}
-      >
-        <iframe
-          src={`https://fast.vidalytics.com/embeds/${videoId}/`}
-          style={{
-            position: "absolute",
-            top: 0,
-            left: 0,
-            width: "100%",
-            height: "100%",
-            border: "none",
-          }}
-          allow="autoplay"
-          allowFullScreen
-        />
-      </div>
+      />
     </div>
   );
 }
