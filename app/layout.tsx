@@ -59,6 +59,14 @@ export default function RootLayout({
           id="vid_glb_S99KMyNq"
           strategy="afterInteractive"
         />
+        <Script
+          src="https://assets.calendly.com/assets/external/widget.js"
+          strategy="afterInteractive"
+        />
+        <link
+          href="https://assets.calendly.com/assets/external/widget.css"
+          rel="stylesheet"
+        />
       </head>
       <body className="font-[family-name:var(--font-inter)] antialiased">
         <Header />

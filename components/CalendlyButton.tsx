@@ -16,7 +16,7 @@ export function CalendlyButton({
   size = "md",
 }: CalendlyButtonProps) {
   const baseClasses =
-    "inline-flex items-center justify-center rounded-lg font-semibold transition-all";
+    "inline-flex items-center justify-center rounded-lg font-semibold transition-all cursor-pointer";
 
   const variants = {
     gold: "gold-gradient text-navy hover:shadow-lg hover:shadow-gold/20",
@@ -31,14 +31,26 @@ export function CalendlyButton({
     lg: "px-8 py-4 text-base",
   };
 
+  function openCalendly() {
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    const win = window as any;
+    if (win.Calendly) {
+      win.Calendly.initPopupWidget({
+        url: "https://calendly.com/ghostoperator/offer",
+      });
+    } else {
+      // Fallback: navigate in same window
+      window.location.href = "https://calendly.com/ghostoperator/offer";
+    }
+  }
+
   return (
-    <a
-      href="https://calendly.com/ghostoperator/offer"
-      target="_blank"
-      rel="noopener noreferrer"
+    <button
+      type="button"
+      onClick={openCalendly}
       className={cn(baseClasses, variants[variant], sizes[size], className)}
     >
       {text}
-    </a>
+    </button>
   );
 }

@@ -33,9 +33,9 @@ No database. No auth. No API routes. Static marketing pages with client-side int
 - `/how-it-works` - 8-stage deployment system + full scope
 - `/results` - Case studies and proof points
 - `/score` - Interactive Execution Gap Score quiz
-- `/partner` - Influencer/bootstrapper/business owner applications
+- `/partner` - Redirects to /apply
 - `/cohort` - Founder's Circle $2,500 sprint enrollment
-- `/apply` - Two-track deployment application (Pay / JV)
+- `/apply` - Three-track deployment application (Business Owner / Influencer JV / Bootstrapper JV)
 - `/thank-you` - Post-booking confirmation
 
 ### Components

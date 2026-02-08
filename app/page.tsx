@@ -95,7 +95,7 @@ export default function Home() {
                   you win.
                 </p>
                 <Link
-                  href="/partner"
+                  href="/apply"
                   className="mt-4 inline-flex text-sm font-semibold text-gold transition-colors hover:text-gold-light"
                 >
                   Explore Partnerships &rarr;
@@ -112,7 +112,7 @@ export default function Home() {
                 Take the Execution Gap Score
               </Link>
               <CalendlyButton
-                text="Book a Strategy Call"
+                text="Book a Call"
                 variant="outline"
                 size="lg"
               />
@@ -508,7 +508,7 @@ export default function Home() {
 
           <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row sm:gap-6">
             <CalendlyButton
-              text="Book a Strategy Call"
+              text="Book a Call"
               variant="gold"
               size="lg"
             />

@@ -289,7 +289,7 @@ export default function HowItWorksPage() {
 
           <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row sm:gap-6">
             <CalendlyButton
-              text="Book a Strategy Call"
+              text="Book a Call"
               variant="gold"
               size="lg"
             />

@@ -560,7 +560,7 @@ export default function ScorePage() {
               </h2>
               <p className="mx-auto mt-4 max-w-lg text-base leading-relaxed text-white/70">
                 {totalScore >= 28
-                  ? "Your systems are working. A strategy call can identify the best path to your next level, whether that's scaling, acquiring, or partnering."
+                  ? "Your systems are working. A call can identify the best path to your next level, whether that is scaling, acquiring, or partnering."
                   : totalScore >= 20
                     ? "You have a real foundation. The gaps between where you are and where you could be are fixable, often in a single sprint. Let's talk about what that looks like."
                     : "The distance between your expertise and your infrastructure is costing you every day. The Ghost Factory was built for exactly this situation."}

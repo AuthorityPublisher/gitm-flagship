@@ -1,3 +1,5 @@
+"use client";
+
 import Link from "next/link";
 
 const deploymentLinks = [
@@ -16,6 +18,18 @@ const youtubeLinks = [
     label: "WellnessPI",
   },
 ];
+
+function openCalendly() {
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  const win = window as any;
+  if (win.Calendly) {
+    win.Calendly.initPopupWidget({
+      url: "https://calendly.com/ghostoperator/offer",
+    });
+  } else {
+    window.location.href = "https://calendly.com/ghostoperator/offer";
+  }
+}
 
 export function Footer() {
   return (
@@ -88,12 +102,6 @@ export function Footer() {
                 Execution Gap Score
               </Link>
               <Link
-                href="/partner"
-                className="text-sm transition-colors hover:text-white"
-              >
-                Partner With Us
-              </Link>
-              <Link
                 href="/apply"
                 className="text-sm transition-colors hover:text-white"
               >
@@ -147,14 +155,13 @@ export function Footer() {
             <p className="mt-4 text-sm text-white/60">
               Your expertise goes in. A scalable business comes out.
             </p>
-            <a
-              href="https://calendly.com/ghostoperator/offer"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="gold-gradient mt-4 inline-block rounded-lg px-6 py-3 text-sm font-semibold text-navy transition-all hover:shadow-lg"
+            <button
+              type="button"
+              onClick={openCalendly}
+              className="gold-gradient mt-4 inline-block rounded-lg px-6 py-3 text-sm font-semibold text-navy transition-all hover:shadow-lg cursor-pointer"
             >
               Book a Call
-            </a>
+            </button>
           </div>
         </div>
 

@@ -10,9 +10,20 @@ const navLinks = [
   { href: "/how-it-works", label: "How It Works" },
   { href: "/results", label: "Results" },
   { href: "/score", label: "Score" },
-  { href: "/partner", label: "Partner" },
   { href: "/apply", label: "Apply" },
 ];
+
+function openCalendly() {
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  const win = window as any;
+  if (win.Calendly) {
+    win.Calendly.initPopupWidget({
+      url: "https://calendly.com/ghostoperator/offer",
+    });
+  } else {
+    window.location.href = "https://calendly.com/ghostoperator/offer";
+  }
+}
 
 export function Header() {
   const [mobileOpen, setMobileOpen] = useState(false);
@@ -37,14 +48,13 @@ export function Header() {
               {link.label}
             </Link>
           ))}
-          <a
-            href="https://calendly.com/ghostoperator/offer"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="gold-gradient rounded-lg px-5 py-2.5 text-sm font-semibold text-navy transition-all hover:shadow-lg"
+          <button
+            type="button"
+            onClick={openCalendly}
+            className="gold-gradient rounded-lg px-5 py-2.5 text-sm font-semibold text-navy transition-all hover:shadow-lg cursor-pointer"
           >
             Book a Call
-          </a>
+          </button>
         </nav>
 
         {/* Mobile menu button */}
@@ -75,14 +85,16 @@ export function Header() {
                 {link.label}
               </Link>
             ))}
-            <a
-              href="https://calendly.com/ghostoperator/offer"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="gold-gradient mt-2 rounded-lg px-5 py-3 text-center text-sm font-semibold text-navy"
+            <button
+              type="button"
+              onClick={() => {
+                setMobileOpen(false);
+                openCalendly();
+              }}
+              className="gold-gradient mt-2 rounded-lg px-5 py-3 text-center text-sm font-semibold text-navy cursor-pointer"
             >
               Book a Call
-            </a>
+            </button>
           </nav>
         </div>
       )}
