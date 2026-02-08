@@ -5,7 +5,7 @@ import Link from "next/link";
 import Image from "next/image";
 
 // TODO: Replace with actual Vidalytics video ID once available from dashboard
-const BRIXTON_VIDEO_ID = "PENDING_VIDEO_ID";
+const BRIXTON_VIDEO_ID = "S3DFnlo5XtYrrZWc";
 
 export default function BrixtonPage() {
   useEffect(() => {
