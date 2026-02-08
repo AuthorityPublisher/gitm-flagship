@@ -54,15 +54,6 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${playfair.variable} ${inter.variable}`}>
       <head>
-        <Script
-          src="https://fast.vidalytics.com/js/global.min.js"
-          id="vid_glb_S99KMyNq"
-          strategy="afterInteractive"
-        />
-        <Script
-          src="https://assets.calendly.com/assets/external/widget.js"
-          strategy="afterInteractive"
-        />
         <link
           href="https://assets.calendly.com/assets/external/widget.css"
           rel="stylesheet"
@@ -72,6 +63,15 @@ export default function RootLayout({
         <Header />
         <main>{children}</main>
         <Footer />
+        <Script
+          src="https://fast.vidalytics.com/js/global.min.js"
+          id="vid_glb_S99KMyNq"
+          strategy="afterInteractive"
+        />
+        <Script
+          src="https://assets.calendly.com/assets/external/widget.js"
+          strategy="afterInteractive"
+        />
       </body>
     </html>
   );
