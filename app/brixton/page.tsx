@@ -209,7 +209,19 @@ export default function BrixtonPage() {
           ============================================ */}
       <section className="bg-white py-12 sm:py-16">
         <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
-          <div className="rounded-2xl border-2 border-gold/20 bg-warm p-6 sm:p-8">
+          {/* Instagram Banner */}
+          <div className="overflow-hidden rounded-2xl border-2 border-gold/20 shadow-md">
+            <Image
+              src="/images/dr-nick-instagram.png"
+              alt="Dr. Nick @thefittestdoc Instagram profile - 297K followers, 3,517 posts, Peak Metabolic Health and Disease Prevention"
+              width={1200}
+              height={500}
+              className="w-full"
+            />
+          </div>
+
+          {/* Testimonial Card */}
+          <div className="mt-6 rounded-2xl border-2 border-gold/20 bg-warm p-6 sm:p-8">
             <div className="grid items-center gap-8 lg:grid-cols-2">
               <div>
                 <p className="text-xs font-bold uppercase tracking-widest text-gold-dark">
@@ -219,7 +231,7 @@ export default function BrixtonPage() {
                   Dr. Nick - @thefittestdoc
                 </p>
                 <p className="mt-1 text-sm font-medium text-gold-dark">
-                  297K Instagram followers. Zero revenue infrastructure.
+                  297K followers. 3,500+ posts. Zero revenue infrastructure.
                 </p>
                 <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
                   Dr. Nick had the audience, the credibility, and the clinical
