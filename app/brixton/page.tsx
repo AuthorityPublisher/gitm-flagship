@@ -223,50 +223,48 @@ export default function BrixtonPage() {
 
           {/* Testimonial Card */}
           <div className="mt-6 rounded-2xl border-2 border-gold/20 bg-warm p-6 sm:p-8">
-            <div className="grid items-center gap-8 lg:grid-cols-2">
-              <div>
-                <p className="text-xs font-bold uppercase tracking-widest text-gold-dark">
-                  Authority Publisher Deployment
-                </p>
-                <p className="mt-2 font-[family-name:var(--font-playfair)] text-xl font-bold text-navy sm:text-2xl">
-                  Dr. Nick - @thefittestdoc
-                </p>
-                <p className="mt-1 text-sm font-medium text-gold-dark">
-                  297K followers. 3,500+ posts. Zero revenue infrastructure.
-                </p>
-                <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
-                  Dr. Nick had the audience, the credibility, and the clinical
-                  methodology. What he did not have was a way to turn any of it
-                  into revenue. I extracted his Metabolic Sleep protocol and
-                  deployed a complete Whop storefront: $27 core program, $47
-                  group coaching, $150 private calls. From zero digital products
-                  to fully operational in one deployment cycle.
-                </p>
-                <div className="mt-4 flex flex-wrap gap-3">
-                  <a
-                    href="https://www.instagram.com/thefittestdoc/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-sm font-semibold text-navy hover:text-gold-dark transition-colors"
-                  >
-                    @thefittestdoc &rarr;
-                  </a>
-                  <a
-                    href="https://whop.com/thefittestyou/metabolicsleep/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-sm font-semibold text-navy hover:text-gold-dark transition-colors"
-                  >
-                    Whop Store &rarr;
-                  </a>
-                </div>
+            <div className="mb-6">
+              <p className="text-xs font-bold uppercase tracking-widest text-gold-dark">
+                Authority Publisher Deployment
+              </p>
+              <p className="mt-2 font-[family-name:var(--font-playfair)] text-xl font-bold text-navy sm:text-2xl">
+                Dr. Nick - @thefittestdoc
+              </p>
+              <p className="mt-1 text-sm font-medium text-gold-dark">
+                297K followers. 3,500+ posts. Zero revenue infrastructure.
+              </p>
+              <p className="mt-4 text-base leading-relaxed text-muted-foreground">
+                Dr. Nick had the audience, the credibility, and the clinical
+                methodology. What he did not have was a way to turn any of it
+                into revenue. I extracted his Metabolic Sleep protocol and
+                deployed a complete Whop storefront: $27 core program, $47
+                group coaching, $150 private calls. From zero digital products
+                to fully operational in one deployment cycle.
+              </p>
+              <div className="mt-4 flex flex-wrap gap-3">
+                <a
+                  href="https://www.instagram.com/thefittestdoc/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-sm font-semibold text-navy hover:text-gold-dark transition-colors"
+                >
+                  @thefittestdoc &rarr;
+                </a>
+                <a
+                  href="https://whop.com/thefittestyou/metabolicsleep/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-sm font-semibold text-navy hover:text-gold-dark transition-colors"
+                >
+                  Whop Store &rarr;
+                </a>
               </div>
-              <div>
-                <VidalyticsEmbed embedId="enNAveCaLlbp_LmT" />
-                <p className="mt-2 text-center text-xs text-muted-foreground">
-                  Dr. Nick - The Fittest Doc - Testimonial
-                </p>
-              </div>
+            </div>
+            <div className="mx-auto max-w-2xl">
+              <VidalyticsEmbed embedId="enNAveCaLlbp_LmT" />
+              <p className="mt-2 text-center text-xs text-muted-foreground">
+                Dr. Nick - The Fittest Doc - Testimonial
+              </p>
             </div>
           </div>
 
