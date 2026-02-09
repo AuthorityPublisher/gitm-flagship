@@ -79,7 +79,7 @@ export default function BrixtonPage() {
       <section className="bg-warm py-16 sm:py-24">
         <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
           <p className="font-[family-name:var(--font-playfair)] text-2xl font-bold leading-tight text-navy sm:text-3xl">
-            This is a system, not a service.
+            Here is what I actually built.
           </p>
 
           <div className="mt-8 space-y-5 text-base leading-relaxed text-foreground/80">
