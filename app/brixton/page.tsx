@@ -30,7 +30,7 @@ export default function BrixtonPage() {
           <p className="text-center text-sm font-semibold uppercase tracking-widest text-gold-light">
             Built for Brixton Albert
           </p>
-          <h1 className="mt-4 text-center font-[family-name:var(--font-playfair)] text-3xl font-bold tracking-tight text-white sm:text-4xl lg:text-5xl">
+          <h1 className="mt-4 text-balance text-center font-[family-name:var(--font-playfair)] text-3xl font-bold tracking-tight text-white sm:text-4xl lg:text-5xl">
             Amber sent me your NHB post. I already built what you&apos;re
             looking for.
           </h1>
@@ -50,7 +50,7 @@ export default function BrixtonPage() {
           ============================================ */}
       <section className="bg-white py-16 sm:py-20">
         <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
-          <p className="font-[family-name:var(--font-playfair)] text-2xl font-bold leading-tight text-navy sm:text-3xl">
+          <p className="text-balance font-[family-name:var(--font-playfair)] text-2xl font-bold leading-tight text-navy sm:text-3xl">
             I shot you a quick video. Three and a half minutes.
           </p>
           <p className="mt-3 text-base leading-relaxed text-foreground/80">
@@ -78,7 +78,7 @@ export default function BrixtonPage() {
           ============================================ */}
       <section className="bg-warm py-16 sm:py-24">
         <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
-          <p className="font-[family-name:var(--font-playfair)] text-2xl font-bold leading-tight text-navy sm:text-3xl">
+          <p className="text-balance font-[family-name:var(--font-playfair)] text-2xl font-bold leading-tight text-navy sm:text-3xl">
             Here is what I actually built.
           </p>
 
@@ -121,7 +121,7 @@ export default function BrixtonPage() {
           ============================================ */}
       <section className="bg-white py-16 sm:py-24">
         <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
-          <p className="font-[family-name:var(--font-playfair)] text-2xl font-bold leading-tight text-navy sm:text-3xl">
+          <p className="text-balance font-[family-name:var(--font-playfair)] text-2xl font-bold leading-tight text-navy sm:text-3xl">
             This page was built by the system. Tonight.
           </p>
           <p className="mt-4 text-base leading-relaxed text-foreground/80">
@@ -221,7 +221,7 @@ export default function BrixtonPage() {
           ============================================ */}
       <section className="bg-warm py-16 sm:py-24">
         <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
-          <p className="font-[family-name:var(--font-playfair)] text-2xl font-bold leading-tight text-navy sm:text-3xl">
+          <p className="text-balance font-[family-name:var(--font-playfair)] text-2xl font-bold leading-tight text-navy sm:text-3xl">
             Active deployments. Each one built from real conversations.
           </p>
           <p className="mt-4 text-base leading-relaxed text-foreground/70">
@@ -407,7 +407,7 @@ export default function BrixtonPage() {
 
           {/* Dr. Nick video */}
           <div className="mt-12">
-            <p className="font-[family-name:var(--font-playfair)] text-xl font-bold text-navy">
+            <p className="text-balance font-[family-name:var(--font-playfair)] text-xl font-bold text-navy">
               Dr. Nick had 297K Instagram followers and zero revenue
               infrastructure. Here is what the system built.
             </p>
@@ -428,7 +428,7 @@ export default function BrixtonPage() {
           ============================================ */}
       <section className="bg-white py-16 sm:py-24">
         <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
-          <p className="font-[family-name:var(--font-playfair)] text-2xl font-bold leading-tight text-navy sm:text-3xl">
+          <p className="text-balance font-[family-name:var(--font-playfair)] text-2xl font-bold leading-tight text-navy sm:text-3xl">
             I already have two golf deployments running.
           </p>
           <p className="mt-4 text-base leading-relaxed text-foreground/80">
@@ -520,7 +520,7 @@ export default function BrixtonPage() {
           ============================================ */}
       <section className="bg-warm py-16 sm:py-24">
         <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
-          <p className="font-[family-name:var(--font-playfair)] text-2xl font-bold leading-tight text-navy sm:text-3xl">
+          <p className="text-balance font-[family-name:var(--font-playfair)] text-2xl font-bold leading-tight text-navy sm:text-3xl">
             Same system. Same conversation. Any scale.
           </p>
 
@@ -567,7 +567,7 @@ export default function BrixtonPage() {
           ============================================ */}
       <section className="bg-white py-16 sm:py-24">
         <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
-          <p className="font-[family-name:var(--font-playfair)] text-2xl font-bold leading-tight text-navy sm:text-3xl">
+          <p className="text-balance font-[family-name:var(--font-playfair)] text-2xl font-bold leading-tight text-navy sm:text-3xl">
             Your NHB post. My system. Line by line.
           </p>
           <p className="mt-4 text-base leading-relaxed text-foreground/70">
@@ -674,13 +674,13 @@ export default function BrixtonPage() {
           ============================================ */}
       <section className="bg-warm py-16 sm:py-20">
         <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
-          <p className="font-[family-name:var(--font-playfair)] text-2xl font-bold leading-tight text-navy sm:text-3xl">
+          <p className="text-balance font-[family-name:var(--font-playfair)] text-2xl font-bold leading-tight text-navy sm:text-3xl">
             Speed is a feature.
           </p>
 
           <div className="mt-8 grid gap-4 sm:grid-cols-2">
             <div className="rounded-xl border border-border bg-white p-5">
-              <p className="font-[family-name:var(--font-playfair)] text-xl font-bold text-navy">
+              <p className="text-balance font-[family-name:var(--font-playfair)] text-xl font-bold text-navy">
                 9 pages
               </p>
               <p className="mt-1 text-sm text-muted-foreground">
@@ -689,7 +689,7 @@ export default function BrixtonPage() {
               </p>
             </div>
             <div className="rounded-xl border border-border bg-white p-5">
-              <p className="font-[family-name:var(--font-playfair)] text-xl font-bold text-navy">
+              <p className="text-balance font-[family-name:var(--font-playfair)] text-xl font-bold text-navy">
                 10 days
               </p>
               <p className="mt-1 text-sm text-muted-foreground">
@@ -699,7 +699,7 @@ export default function BrixtonPage() {
               </p>
             </div>
             <div className="rounded-xl border border-border bg-white p-5">
-              <p className="font-[family-name:var(--font-playfair)] text-xl font-bold text-navy">
+              <p className="text-balance font-[family-name:var(--font-playfair)] text-xl font-bold text-navy">
                 Hours
               </p>
               <p className="mt-1 text-sm text-muted-foreground">
@@ -708,7 +708,7 @@ export default function BrixtonPage() {
               </p>
             </div>
             <div className="rounded-xl border border-border bg-white p-5">
-              <p className="font-[family-name:var(--font-playfair)] text-xl font-bold text-navy">
+              <p className="text-balance font-[family-name:var(--font-playfair)] text-xl font-bold text-navy">
                 3 months
               </p>
               <p className="mt-1 text-sm text-muted-foreground">
@@ -728,7 +728,7 @@ export default function BrixtonPage() {
           ============================================ */}
       <section className="bg-white py-16 sm:py-20">
         <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
-          <p className="font-[family-name:var(--font-playfair)] text-2xl font-bold leading-tight text-navy sm:text-3xl">
+          <p className="text-balance font-[family-name:var(--font-playfair)] text-2xl font-bold leading-tight text-navy sm:text-3xl">
             I am not a stranger to your world.
           </p>
 
@@ -756,7 +756,7 @@ export default function BrixtonPage() {
           ============================================ */}
       <section className="navy-gradient py-16 sm:py-24">
         <div className="mx-auto max-w-3xl px-4 text-center sm:px-6 lg:px-8">
-          <h2 className="font-[family-name:var(--font-playfair)] text-2xl font-bold text-white sm:text-3xl lg:text-4xl">
+          <h2 className="text-balance font-[family-name:var(--font-playfair)] text-2xl font-bold text-white sm:text-3xl lg:text-4xl">
             I built the system. The call figures out how it fits you.
           </h2>
           <p className="mx-auto mt-6 max-w-lg text-base leading-relaxed text-white/60">
