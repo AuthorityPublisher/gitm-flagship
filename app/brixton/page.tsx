@@ -205,6 +205,61 @@ export default function BrixtonPage() {
       </section>
 
       {/* ============================================
+          DR. NICK SOCIAL PROOF
+          ============================================ */}
+      <section className="bg-white py-12 sm:py-16">
+        <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
+          <div className="rounded-2xl border-2 border-gold/20 bg-warm p-6 sm:p-8">
+            <div className="grid items-center gap-8 lg:grid-cols-2">
+              <div>
+                <p className="text-xs font-bold uppercase tracking-widest text-gold-dark">
+                  Authority Publisher Deployment
+                </p>
+                <p className="mt-2 font-[family-name:var(--font-playfair)] text-xl font-bold text-navy sm:text-2xl">
+                  Dr. Nick - @thefittestdoc
+                </p>
+                <p className="mt-1 text-sm font-medium text-gold-dark">
+                  297K Instagram followers. Zero revenue infrastructure.
+                </p>
+                <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
+                  Dr. Nick had the audience, the credibility, and the clinical
+                  methodology. What he did not have was a way to turn any of it
+                  into revenue. I extracted his Metabolic Sleep protocol and
+                  deployed a complete Whop storefront: $27 core program, $47
+                  group coaching, $150 private calls. From zero digital products
+                  to fully operational in one deployment cycle.
+                </p>
+                <div className="mt-4 flex flex-wrap gap-3">
+                  <a
+                    href="https://www.instagram.com/thefittestdoc/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-sm font-semibold text-navy hover:text-gold-dark transition-colors"
+                  >
+                    @thefittestdoc &rarr;
+                  </a>
+                  <a
+                    href="https://whop.com/thefittestyou/metabolicsleep/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-sm font-semibold text-navy hover:text-gold-dark transition-colors"
+                  >
+                    Whop Store &rarr;
+                  </a>
+                </div>
+              </div>
+              <div>
+                <VidalyticsEmbed videoId="JHNBBRwjatnIdLG8" />
+                <p className="mt-2 text-center text-xs text-muted-foreground">
+                  Dr. Nick - The Fittest Doc
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ============================================
           EXPAND BUTTON
           ============================================ */}
       {!expanded && (
@@ -480,6 +535,14 @@ export default function BrixtonPage() {
                     starts. I see someone, I help, and it turns into something
                     real.
                   </p>
+                  <a
+                    href="https://droptenstrokes.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="mt-3 inline-flex text-sm font-semibold text-gold-dark transition-colors hover:text-navy"
+                  >
+                    droptenstrokes.com &rarr;
+                  </a>
                 </div>
 
                 {/* Chase */}
@@ -499,12 +562,12 @@ export default function BrixtonPage() {
                     a 50/50 Authority Publisher partnership.
                   </p>
                   <a
-                    href="https://droptenstrokes.com/chase"
+                    href="https://golfbreathmastery.com"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="mt-3 inline-flex text-sm font-semibold text-gold-dark transition-colors hover:text-navy"
                   >
-                    droptenstrokes.com/chase &rarr;
+                    golfbreathmastery.com &rarr;
                   </a>
                 </div>
               </div>
