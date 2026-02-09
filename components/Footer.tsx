@@ -3,7 +3,7 @@
 import Link from "next/link";
 
 const deploymentLinks = [
-  { href: "https://rethinkdieting.org", label: "Rethink Dieting" },
+  { href: "https://rethinkdieting.com", label: "Rethink Dieting" },
   { href: "https://metabolicsleep.com", label: "Metabolic Sleep" },
   { href: "https://prmspray.com", label: "PRM Spray" },
 ];

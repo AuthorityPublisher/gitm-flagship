@@ -173,12 +173,12 @@ export default function ResultsPage() {
                 </span>
               </div>
               <a
-                href="https://rethinkdieting.org"
+                href="https://rethinkdieting.com"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="mt-6 inline-flex items-center gap-1 text-sm font-semibold text-navy hover:text-gold-dark transition-colors"
               >
-                Visit rethinkdieting.org &rarr;
+                Visit rethinkdieting.com &rarr;
               </a>
             </div>
             <div>

@@ -413,12 +413,12 @@ export default function BrixtonPage() {
                   </p>
 
                   <a
-                    href="https://rethinkdieting.org"
+                    href="https://rethinkdieting.com"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="mt-3 inline-flex text-sm font-semibold text-gold-dark transition-colors hover:text-navy"
                   >
-                    rethinkdieting.org &rarr;
+                    rethinkdieting.com &rarr;
                   </a>
                   <div className="mt-4">
                     <VidalyticsEmbed embedId="ICoXowf3GsFp9QGL" />
