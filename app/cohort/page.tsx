@@ -6,7 +6,7 @@ import { SectionHeading } from "@/components/SectionHeading";
 export const metadata: Metadata = {
   title: "Founder's Circle | The Ghost Factory",
   description:
-    "The Founder's Circle is a $2,500 done-with-you 30-day sprint. Limited to 10 people per cohort. You leave with a working deployment, not a PDF.",
+    "The Founder's Circle is a done-with-you 30-day sprint. Limited to 10 people per cohort. You leave with a working deployment, not a PDF.",
   openGraph: {
     title: "Founder's Circle | The Ghost Factory",
     description:
@@ -66,7 +66,7 @@ export default function CohortPage() {
             The Founder&apos;s Circle
           </h1>
           <p className="mx-auto mt-6 max-w-2xl text-lg leading-relaxed text-white/70 sm:text-xl">
-            $2,500 Done-With-You Sprint
+            30-Day Done-With-You Sprint
           </p>
           <p className="mx-auto mt-4 max-w-xl text-base leading-relaxed text-white/50">
             30 days. 5-10 people per cohort. You leave with a working
@@ -131,34 +131,21 @@ export default function CohortPage() {
       <div className="section-divider" />
 
       {/* ============================================
-          SECTION 4: PRICING + SCARCITY
+          SECTION 4: SCARCITY (NO PRICING)
           ============================================ */}
       <section className="navy-gradient py-20 sm:py-28">
         <div className="mx-auto max-w-3xl px-4 text-center sm:px-6 lg:px-8">
           <p className="text-sm font-semibold uppercase tracking-widest text-gold-light">
-            Investment
+            Limited Availability
           </p>
           <h2 className="mt-4 font-[family-name:var(--font-playfair)] text-3xl font-bold text-white sm:text-4xl lg:text-5xl">
-            $2,500
+            Limited to 10 Spots Per Cohort
           </h2>
-          <p className="mx-auto mt-4 max-w-lg text-base leading-relaxed text-white/70">
-            Founder&apos;s Circle pricing will not last. This program evolves
-            into a $5,000 done-for-you engagement as we refine the system with
-            each cohort. Early participants get the best deal and the most
-            direct access.
+          <p className="mx-auto mt-6 max-w-lg text-base leading-relaxed text-white/70">
+            Small groups by design. Every participant gets direct attention
+            from Jason. When a cohort fills, the next one opens. No
+            exceptions, no overflows.
           </p>
-
-          {/* Scarcity */}
-          <div className="mx-auto mt-10 max-w-md rounded-xl border border-gold/30 bg-white/5 px-6 py-6 backdrop-blur-sm">
-            <p className="font-[family-name:var(--font-playfair)] text-xl font-bold text-gold">
-              Limited to 10 Spots Per Cohort
-            </p>
-            <p className="mt-3 text-sm leading-relaxed text-white/60">
-              Small groups by design. Every participant gets direct attention
-              from Jason. When a cohort fills, the next one opens. No
-              exceptions, no overflows.
-            </p>
-          </div>
 
           {/* Path to DFY */}
           <div className="mx-auto mt-10 max-w-lg">

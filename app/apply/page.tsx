@@ -9,46 +9,34 @@ import { VidalyticsEmbed } from "@/components/VidalyticsEmbed";
 
 type Track = "business" | "influencer" | "bootstrapper";
 
-const pricingTiers = [
+const deploymentPaths = [
   {
     name: "Go/No-Go Assessment",
-    price: "$97",
-    badge: "Start Here",
     whoFor: "Anyone considering a deployment",
     description:
       "Complete deployment readiness diagnostic. We map your market positioning, competitive landscape, tech requirements, copy strategy, automation architecture, and compliance obligations. You receive a detailed scope document covering every component your deployment needs, with a clear recommended path forward. One call. Full clarity on what it takes.",
-    highlighted: false,
   },
   {
     name: "Ghost Sprint",
-    price: "$2,500",
-    badge: "",
     whoFor: "Entrepreneurs who want to build alongside Jason",
     description:
       "DNA extraction, market validation, positioning framework, and MVP microsite. 30-day done-with-you sprint. You leave with a working deployment, not a binder full of homework.",
-    highlighted: false,
   },
   {
     name: "Ghost Launch",
-    price: "$7,500 - $15,000",
-    badge: "Most Popular",
     whoFor: "Business owners ready for full done-for-you deployment",
     description:
       "Full website, email automation, affiliate program, lead magnet, Stripe integration, VSL production, compliance review, and 30-day post-launch optimization. The complete deployment.",
-    highlighted: true,
   },
   {
     name: "Custom Deployment",
-    price: "Let's Talk",
-    badge: "",
     whoFor: "Larger scope projects, enterprise, or unique situations",
     description:
-      "Some deployments require more. Multi-brand architectures, complex integrations, multi-tier value ladders, or industry-specific builds that go beyond a standard launch. If your project does not fit the tiers above, tell us what you need and we will scope it together.",
-    highlighted: false,
+      "Some deployments require more. Multi-brand architectures, complex integrations, multi-tier value ladders, or industry-specific builds that go beyond a standard launch. Tell us what you need and we will scope it together.",
   },
 ];
 
-const tierOptions = pricingTiers.map((t) => t.name);
+const pathOptions = deploymentPaths.map((t) => t.name);
 
 export default function ApplyPage() {
   const [activeTrack, setActiveTrack] = useState<Track>("business");
@@ -197,42 +185,34 @@ export default function ApplyPage() {
               <SectionHeading
                 eyebrow="Paid Deployment"
                 title="You Have the Business. We Build the Machine."
-                subtitle="Choose the level of deployment that fits your stage. Every tier includes positioning, compliance review, and real infrastructure."
+                subtitle="Every deployment includes positioning, compliance review, and real infrastructure. We scope the right path together on a call."
               />
 
               <div className="mx-auto mt-12 max-w-4xl space-y-4">
-                {pricingTiers.map((tier) => (
+                {deploymentPaths.map((path) => (
                   <div
-                    key={tier.name}
-                    className={`rounded-xl border-2 bg-white p-6 shadow-sm transition-all hover:shadow-md ${
-                      tier.highlighted
-                        ? "border-gold/50 ring-2 ring-gold/20"
-                        : "border-border hover:border-gold/30"
-                    }`}
+                    key={path.name}
+                    className="rounded-xl border-2 border-border bg-white p-6 shadow-sm transition-all hover:border-gold/30 hover:shadow-md"
                   >
-                    <div className="flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between">
-                      <div className="flex items-center gap-3">
-                        <h3 className="font-[family-name:var(--font-playfair)] text-xl font-bold text-navy">
-                          {tier.name}
-                        </h3>
-                        {tier.badge && (
-                          <span className="rounded-full bg-navy px-3 py-0.5 text-xs font-bold uppercase tracking-wider text-gold">
-                            {tier.badge}
-                          </span>
-                        )}
-                      </div>
-                      <span className="inline-flex shrink-0 rounded-full border border-gold/30 bg-gold/10 px-4 py-1 text-sm font-bold text-gold-dark">
-                        {tier.price}
-                      </span>
-                    </div>
+                    <h3 className="font-[family-name:var(--font-playfair)] text-xl font-bold text-navy">
+                      {path.name}
+                    </h3>
                     <p className="mt-1 text-xs font-medium uppercase tracking-wider text-gold-dark/70">
-                      {tier.whoFor}
+                      {path.whoFor}
                     </p>
                     <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
-                      {tier.description}
+                      {path.description}
                     </p>
                   </div>
                 ))}
+              </div>
+
+              <div className="mx-auto mt-10 max-w-3xl text-center">
+                <CalendlyButton
+                  text="Book a Call to Discuss Your Deployment"
+                  variant="gold"
+                  size="lg"
+                />
               </div>
 
               {/* Ad spend note */}
@@ -648,14 +628,14 @@ export default function ApplyPage() {
               </div>
             </fieldset>
 
-            {/* Tier dropdown (only for Business track) */}
+            {/* Deployment path dropdown (only for Business track) */}
             {formData.track === "business" && (
               <div>
                 <label
                   htmlFor="tier"
                   className="block text-sm font-semibold text-navy"
                 >
-                  Which tier interests you?
+                  Which deployment path interests you?
                 </label>
                 <select
                   id="tier"
@@ -664,8 +644,8 @@ export default function ApplyPage() {
                   onChange={handleChange}
                   className="mt-2 block w-full rounded-lg border border-border bg-white px-4 py-3 text-sm text-navy focus:border-gold focus:outline-none focus:ring-2 focus:ring-gold/20"
                 >
-                  <option value="">Select a tier</option>
-                  {tierOptions.map((option) => (
+                  <option value="">Select a path</option>
+                  {pathOptions.map((option) => (
                     <option key={option} value={option}>
                       {option}
                     </option>
