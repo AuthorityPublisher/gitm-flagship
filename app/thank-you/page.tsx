@@ -123,7 +123,7 @@ export default function ThankYouPage() {
               Alan &amp; Angie Thomas - Rethink Dieting
             </p>
             <VidalyticsEmbed
-              videoId="3i0AVgTUpnugjz3p"
+              embedId="LifjrhoT5ZeI2shI"
               className="shadow-2xl shadow-black/40"
             />
             <p className="mx-auto mt-4 max-w-lg text-center text-sm leading-relaxed text-white/50">
@@ -138,7 +138,7 @@ export default function ThankYouPage() {
               Coach Beau
             </p>
             <VidalyticsEmbed
-              videoId="SWp0vVcooYFoRAsD"
+              embedId="IKYcyCuITCMFAC8l"
               className="shadow-2xl shadow-black/40"
             />
           </div>

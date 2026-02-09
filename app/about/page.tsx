@@ -375,7 +375,7 @@ export default function AboutPage() {
 
           <div className="mt-12">
             <VidalyticsEmbed
-              videoId="JHNBBRwjatnIdLG8"
+              embedId="enNAveCaLlbp_LmT"
               className="shadow-2xl shadow-black/40"
             />
           </div>

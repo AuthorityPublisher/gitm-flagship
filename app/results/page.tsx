@@ -132,7 +132,7 @@ export default function ResultsPage() {
                 </div>
               </div>
               <div>
-                <VidalyticsEmbed videoId="JHNBBRwjatnIdLG8" />
+                <VidalyticsEmbed embedId="enNAveCaLlbp_LmT" />
                 <p className="mt-2 text-center text-xs text-muted-foreground">
                   Dr. Nick - The Fittest Doc - Metabolic Sleep
                 </p>
@@ -182,7 +182,7 @@ export default function ResultsPage() {
               </a>
             </div>
             <div>
-              <VidalyticsEmbed videoId="GRX2dadxln68ziGE" />
+              <VidalyticsEmbed embedId="ICoXowf3GsFp9QGL" />
               <p className="mt-2 text-center text-xs text-muted-foreground">
                 Alan &amp; Angie Thomas - Rethink Dieting
               </p>
@@ -363,7 +363,7 @@ export default function ResultsPage() {
             />
             <div className="mt-12 grid gap-8 sm:grid-cols-2">
               <div className="rounded-2xl border border-border bg-card p-6 shadow-sm transition-shadow hover:shadow-md">
-                <VidalyticsEmbed videoId="3i0AVgTUpnugjz3p" />
+                <VidalyticsEmbed embedId="LifjrhoT5ZeI2shI" />
                 <div className="mt-4">
                   <p className="font-semibold text-foreground">
                     Alan &amp; Angie Thomas
@@ -374,7 +374,7 @@ export default function ResultsPage() {
                 </div>
               </div>
               <div className="rounded-2xl border border-border bg-card p-6 shadow-sm transition-shadow hover:shadow-md">
-                <VidalyticsEmbed videoId="SWp0vVcooYFoRAsD" />
+                <VidalyticsEmbed embedId="IKYcyCuITCMFAC8l" />
                 <div className="mt-4">
                   <p className="font-semibold text-foreground">Coach Beau</p>
                   <p className="text-sm text-muted-foreground">
@@ -383,7 +383,7 @@ export default function ResultsPage() {
                 </div>
               </div>
               <div className="rounded-2xl border border-border bg-card p-6 shadow-sm transition-shadow hover:shadow-md">
-                <VidalyticsEmbed videoId="oAwfULclgJb04c_A" />
+                <VidalyticsEmbed embedId="iQEdr0M4GRnu7qsD" />
                 <div className="mt-4">
                   <p className="font-semibold text-foreground">
                     Dr. Mrinalini Garv

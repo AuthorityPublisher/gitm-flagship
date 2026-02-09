@@ -5,7 +5,7 @@ interface TestimonialCardProps {
   name: string;
   role: string;
   metric?: string;
-  videoId?: string;
+  embedId?: string;
 }
 
 export function TestimonialCard({
@@ -13,13 +13,13 @@ export function TestimonialCard({
   name,
   role,
   metric,
-  videoId,
+  embedId,
 }: TestimonialCardProps) {
   return (
     <div className="rounded-2xl border border-border bg-card p-6 shadow-sm transition-shadow hover:shadow-md">
-      {videoId && (
+      {embedId && (
         <div className="mb-4">
-          <VidalyticsEmbed videoId={videoId} />
+          <VidalyticsEmbed embedId={embedId} />
         </div>
       )}
       <blockquote className="text-base leading-relaxed text-foreground/80">

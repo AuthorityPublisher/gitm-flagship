@@ -5,7 +5,8 @@ import Image from "next/image";
 import Link from "next/link";
 import { VidalyticsEmbed } from "@/components/VidalyticsEmbed";
 
-const BRIXTON_VIDEO_ID = "S3DFnlo5XtYrrZWc";
+// Embed IDs (NOT video IDs). Get via API: GET /public/v1/embed/video/:videoId
+const BRIXTON_EMBED_ID = "S3DFnlo5XtYrrZWc"; // Portrait video (this IS the embed ID)
 
 function openCalendly() {
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
@@ -41,7 +42,7 @@ export default function BrixtonPage() {
 
           <div className="mx-auto mt-10 max-w-sm">
             <VidalyticsEmbed
-              videoId={BRIXTON_VIDEO_ID}
+              embedId={BRIXTON_EMBED_ID}
               aspectRatio="177.78%"
               className="rounded-2xl border-2 border-gold/20 shadow-2xl shadow-black/40"
             />
@@ -261,7 +262,7 @@ export default function BrixtonPage() {
                 </div>
               </div>
               <div>
-                <VidalyticsEmbed videoId="JHNBBRwjatnIdLG8" />
+                <VidalyticsEmbed embedId="enNAveCaLlbp_LmT" />
                 <p className="mt-2 text-center text-xs text-muted-foreground">
                   Dr. Nick - The Fittest Doc - Testimonial
                 </p>
@@ -422,7 +423,7 @@ export default function BrixtonPage() {
                     rethinkdieting.org &rarr;
                   </a>
                   <div className="mt-4">
-                    <VidalyticsEmbed videoId="GRX2dadxln68ziGE" />
+                    <VidalyticsEmbed embedId="ICoXowf3GsFp9QGL" />
                     <p className="mt-2 text-xs text-muted-foreground">
                       Alan &amp; Angie tell their story
                     </p>
@@ -522,7 +523,7 @@ export default function BrixtonPage() {
                 </p>
                 <div className="mt-6">
                   <VidalyticsEmbed
-                    videoId="JHNBBRwjatnIdLG8"
+                    embedId="enNAveCaLlbp_LmT"
                     className="shadow-2xl shadow-black/40"
                   />
                 </div>
@@ -572,7 +573,7 @@ export default function BrixtonPage() {
                     droptenstrokes.com &rarr;
                   </a>
                   <div className="mt-4">
-                    <VidalyticsEmbed videoId="_cA7w8MwalBCmPej" />
+                    <VidalyticsEmbed embedId="wExQ7ghaKO6FNVYC" />
                     <p className="mt-2 text-xs text-muted-foreground">
                       Dean Chitren - Low 70s Golf
                     </p>

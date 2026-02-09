@@ -5,14 +5,15 @@ import { useEffect, useRef } from "react";
 const VIDALYTICS_ACCOUNT_ID = "S99KMyNq";
 
 interface VidalyticsEmbedProps {
-  videoId: string;
+  /** The EMBED ID (not the video ID). Get from API: GET /embed/video/:videoId */
+  embedId: string;
   className?: string;
   /** Override the default 56.25% (16:9) aspect ratio, e.g. "177.78%" for 9:16 portrait */
   aspectRatio?: string;
 }
 
 export function VidalyticsEmbed({
-  videoId,
+  embedId,
   className = "",
   aspectRatio = "56.25%",
 }: VidalyticsEmbedProps) {
@@ -26,9 +27,11 @@ export function VidalyticsEmbed({
     // Vidalytics requires a per-video IIFE that loads loader.min.js and
     // player.min.js from the embed URL. The global script (layout.tsx)
     // handles tracking/cookies but does NOT render videos by itself.
-    // This is the exact IIFE pattern from the Vidalytics dashboard.
-    const embedId = `vidalytics_embed_${videoId}`;
-    const baseUrl = `https://fast.vidalytics.com/embeds/${VIDALYTICS_ACCOUNT_ID}/${videoId}/`;
+    //
+    // CRITICAL: The embed ID is NOT the same as the video ID.
+    // Use the API (GET /public/v1/embed/video/:videoId) to get the embed ID.
+    const divId = `vidalytics_embed_${embedId}`;
+    const baseUrl = `https://fast.vidalytics.com/embeds/${VIDALYTICS_ACCOUNT_ID}/${embedId}/`;
 
     const script = document.createElement("script");
     script.type = "text/javascript";
@@ -41,22 +44,21 @@ export function VidalyticsEmbed({
           i.getElementsByTagName("head")[0].appendChild(s);
         };}
         vsl(l+'loader.min.js',function(){if(!vli){var vlc=v[c][vl];vli=new vlc();}vli.loadScript(l+'player.min.js',function(){var vec=v[d][ve];t=new vec();t.run(a);});});
-      })(window, document, 'Vidalytics', '${embedId}', '${baseUrl}');
+      })(window, document, 'Vidalytics', '${divId}', '${baseUrl}');
     `;
 
-    // Insert right after the embed div
     containerRef.current?.parentElement?.appendChild(script);
 
     return () => {
       script.remove();
     };
-  }, [videoId]);
+  }, [embedId]);
 
   return (
     <div className={`w-full overflow-hidden rounded-xl ${className}`}>
       <div
         ref={containerRef}
-        id={`vidalytics_embed_${videoId}`}
+        id={`vidalytics_embed_${embedId}`}
         style={{ width: "100%", position: "relative", paddingTop: aspectRatio }}
       />
     </div>
