@@ -220,6 +220,22 @@ export default function BrixtonPage() {
             />
           </div>
 
+          {/* Dr. Nick + Jason + Amber Photo */}
+          <div className="mt-6 overflow-hidden rounded-2xl border-2 border-gold/20 shadow-md">
+            <Image
+              src="/images/dr-nick-jason-amber.jpg"
+              alt="Dr. Nick, Jason Laird, and Amber Laird"
+              width={3088}
+              height={2316}
+              className="w-full"
+            />
+            <div className="bg-warm px-4 py-3">
+              <p className="text-center text-sm text-muted-foreground">
+                Dr. Nick, Jason, and Amber. This is what partnerships look like.
+              </p>
+            </div>
+          </div>
+
           {/* Testimonial Card */}
           <div className="mt-6 rounded-2xl border-2 border-gold/20 bg-warm p-6 sm:p-8">
             <div className="grid items-center gap-8 lg:grid-cols-2">
@@ -263,7 +279,7 @@ export default function BrixtonPage() {
               <div>
                 <VidalyticsEmbed videoId="JHNBBRwjatnIdLG8" />
                 <p className="mt-2 text-center text-xs text-muted-foreground">
-                  Dr. Nick - The Fittest Doc
+                  Dr. Nick - The Fittest Doc - Testimonial
                 </p>
               </div>
             </div>
