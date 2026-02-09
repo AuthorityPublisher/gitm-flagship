@@ -2,6 +2,8 @@
 
 import { useEffect, useRef } from "react";
 
+const VIDALYTICS_ACCOUNT_ID = "S99KMyNq";
+
 interface VidalyticsEmbedProps {
   videoId: string;
   className?: string;
@@ -15,41 +17,39 @@ export function VidalyticsEmbed({
   aspectRatio = "56.25%",
 }: VidalyticsEmbedProps) {
   const containerRef = useRef<HTMLDivElement>(null);
+  const injectedRef = useRef(false);
 
   useEffect(() => {
-    // The Vidalytics global script (loaded in layout.tsx) exposes
-    // window.vidalytics_embed (SINGULAR, not plural).
-    // It scans for divs with id="vidalytics_embed_VIDEO_ID" and injects players.
-    // In React, components mount after the initial scan, so we poll
-    // for the function and trigger a rescan once available.
-    // eslint-disable-next-line @typescript-eslint/no-explicit-any
-    const win = window as any;
+    if (injectedRef.current) return;
+    injectedRef.current = true;
 
-    function tryRescan() {
-      if (typeof win.vidalytics_embed === "function") {
-        win.vidalytics_embed();
-        return true;
-      }
-      return false;
-    }
+    // Vidalytics requires a per-video IIFE that loads loader.min.js and
+    // player.min.js from the embed URL. The global script (layout.tsx)
+    // handles tracking/cookies but does NOT render videos by itself.
+    // This is the exact IIFE pattern from the Vidalytics dashboard.
+    const embedId = `vidalytics_embed_${videoId}`;
+    const baseUrl = `https://fast.vidalytics.com/embeds/${VIDALYTICS_ACCOUNT_ID}/${videoId}/`;
 
-    if (tryRescan()) return;
+    const script = document.createElement("script");
+    script.type = "text/javascript";
+    script.textContent = `
+      (function (v, i, d, a, l, y, t, c, s) {
+        y='_'+d.toLowerCase();c=d+'L';if(!v[d]){v[d]={};}if(!v[c]){v[c]={};}if(!v[y]){v[y]={};}var vl='Loader',vli=v[y][vl],vsl=v[c][vl+'Script'],vlf=v[c][vl+'Loaded'],ve='Embed';
+        if(!vsl){vsl=function(u,cb){
+          if(t){cb();return;}s=i.createElement("script");s.type="text/javascript";s.async=1;s.src=u;
+          if(s.readyState){s.onreadystatechange=function(){if(s.readyState==="loaded"||s.readyState=="complete"){s.onreadystatechange=null;vlf=1;cb();}};}else{s.onload=function(){vlf=1;cb();};}
+          i.getElementsByTagName("head")[0].appendChild(s);
+        };}
+        vsl(l+'loader.min.js',function(){if(!vli){var vlc=v[c][vl];vli=new vlc();}vli.loadScript(l+'player.min.js',function(){var vec=v[d][ve];t=new vec();t.run(a);});});
+      })(window, document, 'Vidalytics', '${embedId}', '${baseUrl}');
+    `;
 
-    let attempts = 0;
-    const maxAttempts = 60; // 60 x 250ms = 15 seconds
-    const interval = setInterval(() => {
-      attempts++;
-      if (tryRescan()) {
-        clearInterval(interval);
-      } else if (attempts >= maxAttempts) {
-        clearInterval(interval);
-        console.warn(
-          `Vidalytics global script did not load within 15s. Video "${videoId}" may not render.`
-        );
-      }
-    }, 250);
+    // Insert right after the embed div
+    containerRef.current?.parentElement?.appendChild(script);
 
-    return () => clearInterval(interval);
+    return () => {
+      script.remove();
+    };
   }, [videoId]);
 
   return (
