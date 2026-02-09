@@ -206,8 +206,7 @@ export default function BrixtonPage() {
                 </p>
                 <p className="mt-1 text-sm text-muted-foreground">
                   What it looks like when the system builds a complete business
-                  deployment from a single conversation. Every piece,
-                  documented and delivered.
+                  deployment. Every piece, documented and delivered.
                 </p>
               </div>
             </div>
@@ -223,14 +222,17 @@ export default function BrixtonPage() {
       <section className="bg-warm py-16 sm:py-24">
         <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
           <p className="font-[family-name:var(--font-playfair)] text-2xl font-bold leading-tight text-navy sm:text-3xl">
-            Active deployments. Each one built from a single conversation.
+            Active deployments. Each one built from real conversations.
           </p>
           <p className="mt-4 text-base leading-relaxed text-foreground/70">
-            Every deployment starts the same way: I sit down with someone for
-            20 minutes. I extract their DNA. The methodology, the stories, the
-            positioning, the competitive advantages. Then the system builds
-            everything around it. Custom. Not templated. Here is what is
-            running right now:
+            Every deployment starts the same way: I have an initial
+            conversation to figure out if there is a fit. If there is, I go
+            deep. That might be one long interview, it might be multiple
+            sessions, it might just be a URL and some source material. I
+            extract their DNA: the methodology, the stories, the positioning,
+            the competitive advantages. Then the system builds everything
+            around it. Custom. Not templated. Here is what is running right
+            now:
           </p>
 
           <div className="mt-10 space-y-6">
@@ -454,13 +456,14 @@ export default function BrixtonPage() {
             </p>
 
             <p>
-              Same 20-minute conversation. Same system. Same person (me and
-              Atlas). The deployment is custom to whatever comes out of that
-              conversation. Some people get their own full Ghost deployment.
-              Some people get plugged into an existing deployment as a backend
-              piece, an upsell, or a flywheel component. Nobody needs to be
-              good at everything. They just need something they are good at and
-              care about.
+              Same initial conversation. Same system. Same person (me and
+              Atlas). For you, that would mean sitting down with you and your
+              team, getting the exact input of what you are looking for, and
+              building it with The Ghost Factory. Some people get their own
+              full Ghost deployment. Some people get plugged into an existing
+              deployment as a backend piece, an upsell, or a flywheel
+              component. Nobody needs to be good at everything. They just need
+              something they are good at and care about.
             </p>
 
             <p>
