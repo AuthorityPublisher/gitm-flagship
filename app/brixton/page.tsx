@@ -1,7 +1,7 @@
 "use client";
 
-import Link from "next/link";
 import Image from "next/image";
+import Link from "next/link";
 import { VidalyticsEmbed } from "@/components/VidalyticsEmbed";
 
 const BRIXTON_VIDEO_ID = "S3DFnlo5XtYrrZWc";
@@ -22,27 +22,31 @@ export default function BrixtonPage() {
   return (
     <div className="pt-16">
       {/* ============================================
-          HERO - Lead with why this exists for Brixton
+          HERO
           ============================================ */}
       <section className="navy-gradient relative overflow-hidden">
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,rgba(212,168,67,0.06),transparent_60%)]" />
         <div className="relative mx-auto max-w-4xl px-4 py-16 sm:px-6 sm:py-24 lg:px-8">
           <p className="text-center text-sm font-semibold uppercase tracking-widest text-gold-light">
-            Built for Performance Golf
+            Built for Brixton Albert
           </p>
           <h1 className="mt-4 text-center font-[family-name:var(--font-playfair)] text-3xl font-bold tracking-tight text-white sm:text-4xl lg:text-5xl">
-            Amber told me about your post in Nothing Held Back.
+            Amber sent me your NHB post. I already built what you&apos;re
+            looking for.
           </h1>
           <p className="mx-auto mt-6 max-w-2xl text-center text-lg leading-relaxed text-white/70">
-            It just so happens I actually built one of those for myself. I never
-            intended to sell it to anybody. It was really just for me. Then I
-            realized you might need the same thing.
+            You described a system that reduces fragmentation, turns messy
+            inputs into distilled direction, and keeps a CEO focused on two or
+            three priorities instead of five or six. I built that for myself
+            over the last three months, sometimes until 3am. I never intended
+            to sell it to anybody. Then I read your post and realized you
+            might need the same thing.
           </p>
         </div>
       </section>
 
       {/* ============================================
-          VIDEO - Let Jason tell the story
+          VIDEO + CONTEXT
           ============================================ */}
       <section className="bg-white py-16 sm:py-20">
         <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
@@ -50,9 +54,8 @@ export default function BrixtonPage() {
             I shot you a quick video. Three and a half minutes.
           </p>
           <p className="mt-3 text-base leading-relaxed text-foreground/80">
-            I explain how the system came together, what it actually does, and
-            why it might matter for an operation like Performance Golf. No pitch.
-            Just the real story.
+            No pitch. Just the real story of how this system came together
+            and why it might matter for Performance Golf.
           </p>
 
           <div className="mx-auto mt-8 max-w-sm">
@@ -71,36 +74,41 @@ export default function BrixtonPage() {
       <div className="section-divider" />
 
       {/* ============================================
-          THE PROBLEM I SOLVED FOR MYSELF
+          WHAT THE GHOST FACTORY ACTUALLY IS
           ============================================ */}
       <section className="bg-warm py-16 sm:py-24">
         <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
-          <div className="space-y-6 text-base leading-relaxed text-foreground/80">
-            <p className="font-[family-name:var(--font-playfair)] text-2xl font-bold leading-tight text-navy sm:text-3xl">
-              I had the same problem you probably have.
+          <p className="font-[family-name:var(--font-playfair)] text-2xl font-bold leading-tight text-navy sm:text-3xl">
+            This is a system, not a service.
+          </p>
+
+          <div className="mt-8 space-y-5 text-base leading-relaxed text-foreground/80">
+            <p>
+              The Ghost Factory is an executive function operating system I
+              built on top of Claude Code. It runs my businesses. All of them.
+              Simultaneously. 40 custom skills, 130+ operational files, session
+              protocols for starting and closing work, an intake system that
+              processes any input (Slack messages, voice notes, email threads,
+              uploaded files) and routes it to the right place automatically.
             </p>
 
             <p>
-              I can see the whole thing. The whole project, immediately. The
-              offer, the funnel, the positioning, the content strategy, the
-              backend automation. All of it, right there in my head. But then I
-              get stuck on what email to send or what color of the website. And
-              nothing ships.
+              I call it the 90/10 model. Atlas (that is what I named my Claude
+              Code instance) handles 90% of the execution: research,
+              positioning, copy, builds, automation, compliance, documentation.
+              I handle 10%: strategy, direction, final approvals, and the
+              conversations that matter. The system keeps me focused on two or
+              three priorities instead of drowning in five or six.
             </p>
 
             <p>
-              So I built a system that does it excellently from the beginning. It
-              takes all those decisions away from me. I give it 10% of the
-              effort: the strategy, the direction, the expertise. The system
-              handles the other 90%. The research, the copy, the tech, the
-              automation, the compliance. Everything.
-            </p>
-
-            <p>
-              It takes an idea and turns it into a deployable business with an
-              MVP. And it evaluates that MVP with real traffic and real
-              purchasing signals before I commit serious resources to scaling
-              it.
+              That is exactly what you described in your NHB post. You wrote
+              about someone who &ldquo;reduces fragmentation,&rdquo; who
+              &ldquo;turns messy inputs into clean, decision-ready
+              summaries,&rdquo; who is &ldquo;proactive by default.&rdquo; You
+              asked for someone fluent in Claude Code who thinks in workflows,
+              agents, and automations. I am not applying for a job. I am
+              showing you something that already exists and works.
             </p>
           </div>
         </div>
@@ -109,80 +117,99 @@ export default function BrixtonPage() {
       <div className="section-divider" />
 
       {/* ============================================
-          WHAT IT WOULD LOOK LIKE FOR YOU
+          BUILDING IN PUBLIC - THE SCREENSHOTS
           ============================================ */}
       <section className="bg-white py-16 sm:py-24">
-        <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
+        <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
           <p className="font-[family-name:var(--font-playfair)] text-2xl font-bold leading-tight text-navy sm:text-3xl">
-            What it would look like for Performance Golf.
+            This page was built by the system. Tonight.
+          </p>
+          <p className="mt-4 text-base leading-relaxed text-foreground/80">
+            Amber sent me your post a few hours ago. I recognized the
+            alignment immediately. Within hours, The Ghost Factory was
+            custom-building this page specifically for you. That is the speed.
+            Not because it is rushed, but because the infrastructure already
+            exists. I give direction, Atlas executes. Here is what that looks
+            like in real time:
           </p>
 
-          <div className="mt-10 space-y-6">
-            <div className="rounded-xl border border-border bg-white p-6 shadow-sm">
-              <p className="text-xs font-bold uppercase tracking-widest text-gold-dark">
-                Your DNA, Extracted
-              </p>
-              <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
-                I interview you. What I have really been able to do, across
-                every deployment, is interview people to get their exact system.
-                The methodology. The language. The competitive advantages. The
-                stories. That DNA becomes the foundation for every piece of
-                copy, every funnel, every email the system produces. It sounds
-                like you. It sells like you. Because it is built from you.
-              </p>
+          <div className="mt-10 grid gap-6 sm:grid-cols-2">
+            <div className="overflow-hidden rounded-xl border border-border shadow-md">
+              <Image
+                src="/images/brixton-claude-terminal.png"
+                alt="Claude Code terminal building the Brixton page with task phases and checkmarks"
+                width={800}
+                height={600}
+                className="w-full"
+              />
+              <div className="bg-warm p-4">
+                <p className="text-xs font-semibold uppercase tracking-wider text-gold-dark">
+                  Building Your Page
+                </p>
+                <p className="mt-1 text-sm text-muted-foreground">
+                  Atlas working through the Brixton page build. Task list,
+                  phases, checkmarks. Multi-agent parallel execution.
+                </p>
+              </div>
             </div>
 
-            <div className="rounded-xl border border-border bg-white p-6 shadow-sm">
-              <p className="text-xs font-bold uppercase tracking-widest text-gold-dark">
-                Market Positioning
-              </p>
-              <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
-                The golf instruction market is crowded. Everybody promises lower
-                scores. The system maps your competitive landscape, identifies
-                the positioning gaps your competitors leave open, and builds
-                messaging that makes Performance Golf the obvious choice for
-                your specific audience. Not generic. Not templated. Engineered
-                for your market position.
-              </p>
+            <div className="overflow-hidden rounded-xl border border-border shadow-md">
+              <Image
+                src="/images/cerebrating-deploy.png"
+                alt="Deploy success with green checkmark after pushing to production"
+                width={800}
+                height={600}
+                className="w-full"
+              />
+              <div className="bg-warm p-4">
+                <p className="text-xs font-semibold uppercase tracking-wider text-gold-dark">
+                  Deployed to Production
+                </p>
+                <p className="mt-1 text-sm text-muted-foreground">
+                  Green checkmark. Live on the internet. From idea to deployed
+                  in the same session.
+                </p>
+              </div>
             </div>
 
-            <div className="rounded-xl border border-border bg-white p-6 shadow-sm">
-              <p className="text-xs font-bold uppercase tracking-widest text-gold-dark">
-                Full Revenue Infrastructure
-              </p>
-              <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
-                Website. VSL production. Lead magnets. Email automation. Stripe
-                integration. Affiliate program. Product tiers from front-end
-                offers through high-ticket enrollment. Compliance review on
-                every claim. All of it built as one integrated system, not 15
-                different tools duct-taped together.
-              </p>
+            <div className="overflow-hidden rounded-xl border border-border shadow-md">
+              <Image
+                src="/images/brixton-work-in-progress.png"
+                alt="Terminal session showing the Brixton page being built in real-time"
+                width={800}
+                height={600}
+                className="w-full"
+              />
+              <div className="bg-warm p-4">
+                <p className="text-xs font-semibold uppercase tracking-wider text-gold-dark">
+                  The Session in Progress
+                </p>
+                <p className="mt-1 text-sm text-muted-foreground">
+                  This is how I work. I get an idea, give direction, and then
+                  custom-build everything. No templates. No agencies. Just the
+                  system executing.
+                </p>
+              </div>
             </div>
 
-            <div className="rounded-xl border border-border bg-white p-6 shadow-sm">
-              <p className="text-xs font-bold uppercase tracking-widest text-gold-dark">
-                MVP First
-              </p>
-              <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
-                I learned this the hard way. My very first Authority Publisher
-                project was an influencer. We did a lot of work, built the
-                sites, did all the things by hand. When he went to send his
-                email, we got 50 people from his Instagram to the site. That was
-                a real kick in the nuts. So now the system deploys an MVP first.
-                Real traffic. Real data. If it converts, we scale it. If it does
-                not, we adjust before committing serious resources.
-              </p>
-            </div>
-
-            <div className="rounded-xl border border-border bg-white p-6 shadow-sm">
-              <p className="text-xs font-bold uppercase tracking-widest text-gold-dark">
-                Your Role: 10%
-              </p>
-              <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
-                You provide the expertise, the strategic direction, and the
-                final approval. The system handles the other 90%. You stay in
-                the zone that built Performance Golf in the first place.
-              </p>
+            <div className="overflow-hidden rounded-xl border border-border shadow-md">
+              <Image
+                src="/images/linda-downey-deployment.png"
+                alt="Full deployment package output in terminal showing Ghost Factory building a complete business"
+                width={800}
+                height={600}
+                className="w-full"
+              />
+              <div className="bg-warm p-4">
+                <p className="text-xs font-semibold uppercase tracking-wider text-gold-dark">
+                  A Full Deployment Package
+                </p>
+                <p className="mt-1 text-sm text-muted-foreground">
+                  What it looks like when the system builds a complete business
+                  deployment from a single conversation. Every piece,
+                  documented and delivered.
+                </p>
+              </div>
             </div>
           </div>
         </div>
@@ -191,67 +218,120 @@ export default function BrixtonPage() {
       <div className="section-divider" />
 
       {/* ============================================
-          PROOF - What the system has actually deployed
+          WHAT THE SYSTEM HAS DEPLOYED
           ============================================ */}
       <section className="bg-warm py-16 sm:py-24">
         <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
           <p className="font-[family-name:var(--font-playfair)] text-2xl font-bold leading-tight text-navy sm:text-3xl">
-            This is what the system has deployed in its first 90 days.
+            Active deployments. Each one built from a single conversation.
           </p>
-          <p className="mt-3 text-base text-foreground/70">
-            I built it by building these. Each one is a real deployment, not a
-            mockup.
+          <p className="mt-4 text-base leading-relaxed text-foreground/70">
+            Every deployment starts the same way: I sit down with someone for
+            20 minutes. I extract their DNA. The methodology, the stories, the
+            positioning, the competitive advantages. Then the system builds
+            everything around it. Custom. Not templated. Here is what is
+            running right now:
           </p>
 
           <div className="mt-10 space-y-6">
+            {/* RTD */}
             <div className="rounded-xl border border-border bg-white p-6">
               <p className="text-xs font-bold uppercase tracking-widest text-gold-dark">
-                Rethink Dieting - 10 Days from Interview to Live
+                Rethink Dieting
+              </p>
+              <p className="mt-1 text-sm font-semibold text-navy">
+                Math-based weight loss. 10 days from interview to live.
               </p>
               <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
-                Alan and Angie had a proven weight loss method and an existing
-                audience. No infrastructure. In 10 days the system deployed a
-                personalized calculator, VSL integration, a 3-email follow-up
-                sequence, a 7-email nurture sequence, Stripe payment processing,
-                and 19 product tier copy packages from $7 to $97. First email
-                blast generated immediate optins.
+                Alan Thomas lost 129 pounds in 260 days by posting his scale
+                on Facebook every single morning. His method is not a diet.
+                It is math: know your burn rate, know your intake, know
+                exactly where you will be on any given date. His wife Angie
+                lost 63 pounds using the same system. The Ghost Factory
+                extracted their methodology and in 10 days deployed a
+                personalized BMR calculator that generates custom reports, a
+                full email automation system, Stripe payment processing, and
+                19 product tier packages. This is an 80/20 joint venture with
+                a $1B exit vision (Weight Watchers-level scale) and a PE
+                investor who has been telling Alan for four years: &ldquo;You
+                find a way to scale it, I will find a bunch of money for
+                it.&rdquo;
               </p>
             </div>
 
+            {/* TCF */}
             <div className="rounded-xl border border-border bg-white p-6">
               <p className="text-xs font-bold uppercase tracking-widest text-gold-dark">
-                PRM Spray - $1,155 in 4 Days from a Dead List
+                The Cleanup Firm
+              </p>
+              <p className="mt-1 text-sm font-semibold text-navy">
+                CPA-grade QuickBooks cleanups. 90/10 partner model.
               </p>
               <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
-                A shingles topical spray I created for my mother, Judi Laird,
-                Mayor of Casper, Wyoming, before she passed in 2024. The product
-                had been sitting dormant. The email list was six years old.
-                Nobody thought it was still alive. The system built the launch
-                sequence. Four days later, $1,155 from a list everyone had
-                written off.
+                My wife Amber&apos;s business. 30+ years of financial
+                management experience across three multi-million dollar
+                companies. The Ghost Factory built the positioning
+                (&ldquo;We clean the books. You keep the client.&rdquo;),
+                the forensic diagnostic scoring engine, white-label partner
+                portals co-branded to each CPA firm, and a two-funnel
+                go-to-market strategy (CPA partnerships and direct business
+                owner outreach). The partner keeps 10% and the ongoing
+                client relationship forever. First cleanup: $3,690 in
+                revenue plus $300/month recurring. Model proved on
+                transaction one.
               </p>
             </div>
 
+            {/* AP / WPI */}
             <div className="rounded-xl border border-border bg-white p-6">
               <p className="text-xs font-bold uppercase tracking-widest text-gold-dark">
-                The Cleanup Firm - Model Validated on First Transaction
+                Authority Publisher
+              </p>
+              <p className="mt-1 text-sm font-semibold text-navy">
+                Turn experts into digital product businesses. Zero upfront for
+                qualified partners.
               </p>
               <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
-                Amber&apos;s bookkeeping cleanup business. The system built the
-                positioning, the CRM pipeline, and the partner acquisition
-                strategy. First cleanup: $3,690 in revenue and an ongoing
-                $300/month recurring client. The model proved out on transaction
-                one.
+                This is the publishing arm. I extract an expert&apos;s DNA
+                (their method, their stories, their audience) and build
+                complete revenue infrastructure around it. Products, funnels,
+                email automation, affiliate programs, Stripe integration,
+                compliance review. 50/50 revenue share, zero upfront cost for
+                qualified partners. Dr. Nick had 297K Instagram followers and
+                no revenue system. I extracted his clinical methodology and
+                deployed the full product, funnel, and automation behind it.
+                That is the model. The expert stays in their zone. The system
+                handles everything else.
+              </p>
+            </div>
+
+            {/* WPI */}
+            <div className="rounded-xl border border-border bg-white p-6">
+              <p className="text-xs font-bold uppercase tracking-widest text-gold-dark">
+                WellnessPI
+              </p>
+              <p className="mt-1 text-sm font-semibold text-navy">
+                SaaS platform. Mobile-first wellness assessment for
+                practitioners.
+              </p>
+              <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+                Built from my own 20+ years in clinical practice (10,000+
+                patients treated). A comprehensive substance database with
+                modern categories competitors do not carry: GLP-1
+                medications, PFAS compounds, cannabinoid profiles, tick-borne
+                pathogens. Purpose-built for naturopaths, chiropractors, and
+                integrative medicine practitioners. No hardware required
+                (unlike the $5K+ systems currently on the market). Next.js,
+                MongoDB Atlas, Vercel. Live at wellnesspi.com.
               </p>
             </div>
           </div>
 
-          {/* Dr. Nick */}
+          {/* Dr. Nick video */}
           <div className="mt-12">
             <p className="font-[family-name:var(--font-playfair)] text-xl font-bold text-navy">
               Dr. Nick had 297K Instagram followers and no revenue
-              infrastructure. I extracted his clinical DNA and built the full
-              product and revenue system behind it.
+              infrastructure. This is what the system built for him.
             </p>
             <div className="mt-6">
               <VidalyticsEmbed
@@ -266,38 +346,67 @@ export default function BrixtonPage() {
       <div className="section-divider" />
 
       {/* ============================================
-          THE GOLF BACKGROUND
+          THE GOLF DEPLOYMENTS
           ============================================ */}
-      <section className="bg-white py-16 sm:py-20">
+      <section className="bg-white py-16 sm:py-24">
         <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
-          <div className="space-y-6 text-base leading-relaxed text-foreground/80">
-            <p className="font-[family-name:var(--font-playfair)] text-2xl font-bold leading-tight text-navy sm:text-3xl">
-              Two of my clients are golfers. That is not a coincidence.
-            </p>
+          <p className="font-[family-name:var(--font-playfair)] text-2xl font-bold leading-tight text-navy sm:text-3xl">
+            I already have two golf deployments running.
+          </p>
+          <p className="mt-4 text-base leading-relaxed text-foreground/80">
+            This is not me pitching into a market I do not understand. I have
+            been in the golf world for years. Two active deployments, real
+            revenue, real results.
+          </p>
 
-            <p>
-              Dean Chitren and I worked together for over six years. Low 70s
-              Golf. I was tip of the spear for his high-ticket coaching
-              operation. $10K to $17K program enrollment. Built every funnel,
-              wrote every piece of copy, closed every deal. Over $380K
-              generated together. All by hand, before this system existed.
-            </p>
+          <div className="mt-10 space-y-6">
+            {/* Dean */}
+            <div className="rounded-xl border border-border bg-warm p-6">
+              <p className="text-xs font-bold uppercase tracking-widest text-gold-dark">
+                Dean Chitren / Low 70s Golf
+              </p>
+              <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+                Dean and I worked together for over six years. $380K+
+                generated together. $10K to $17K high-ticket coaching
+                enrollment. I built every funnel, wrote every piece of copy,
+                and closed every deal. The story of how we connected says a
+                lot about how I work: we were both in John Benson&apos;s
+                Clients on Demand program. It was not working for Dean. I
+                wanted to help, so I built his pages myself. Then I ended up
+                becoming his enrollment closer and we closed serious money
+                together, all before the pandemic. That is how this always
+                starts. I see someone, I help, and it turns into something
+                real.
+              </p>
+            </div>
 
-            <p>
-              Chase Cooper was the same approach. Veteran. Breath work
-              methodology applied specifically to golf. Different expert,
-              different angle, same market.
-            </p>
-
-            <p>
-              That manual experience across six years in golf is what taught me
-              what to systematize. I know the objections. I know what moves
-              golfers from a free video to a paid program. I know the
-              difference between positioning that works in this market and
-              positioning that sounds good in a meeting but dies on a landing
-              page.
-            </p>
+            {/* Chase */}
+            <div className="rounded-xl border border-border bg-warm p-6">
+              <p className="text-xs font-bold uppercase tracking-widest text-gold-dark">
+                Chase Cooper / Golf Breath Mastery
+              </p>
+              <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+                Chase served with the 425th FA Brigade out of Fort Drum. On
+                June 5, 2011, in Afghanistan, his LT stepped on a 40-pound
+                IED. Took his LT&apos;s legs. Chase took shrapnel to the
+                neck, nearly bled out. Multiple surgeries. Walter Reed.
+                Months learning to use his right hand again. He turned his
+                recovery breathing techniques into a golf performance method
+                and won the 2025 VGA National Championship (Wounded Veteran
+                B Flight). That methodology became Golf Breath Mastery:
+                a 50/50 Authority Publisher partnership. Waitlist at
+                droptenstrokes.com/chase.
+              </p>
+            </div>
           </div>
+
+          <p className="mt-8 text-sm leading-relaxed text-foreground/70">
+            Six years in golf high-ticket sales. Two active deployments. I
+            know the objections. I know what moves golfers from a free video
+            to a paid program. I know the difference between positioning that
+            works in this market and positioning that sounds good in a meeting
+            but dies on a landing page.
+          </p>
 
           {/* Objection Box */}
           <div className="mt-10">
@@ -311,7 +420,9 @@ export default function BrixtonPage() {
               />
             </div>
             <p className="mt-3 text-xs text-muted-foreground">
-              Bill Walsh Objection Box Elite. #1 on all 3 leaderboards.
+              Bill Walsh Objection Box Elite. #1 on all 3 leaderboards. Level
+              5, Top 3%. That is not a course completion badge. That is
+              competitive sales performance against thousands of closers.
             </p>
           </div>
         </div>
@@ -320,18 +431,254 @@ export default function BrixtonPage() {
       <div className="section-divider" />
 
       {/* ============================================
-          CTA - Match the tone of the transcript
+          THE RANGE
+          ============================================ */}
+      <section className="bg-warm py-16 sm:py-24">
+        <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
+          <p className="font-[family-name:var(--font-playfair)] text-2xl font-bold leading-tight text-navy sm:text-3xl">
+            Same system. Same conversation. Any scale.
+          </p>
+
+          <div className="mt-8 space-y-5 text-base leading-relaxed text-foreground/80">
+            <p>
+              There is a guy in New Smyrna Beach who hand-makes rainbow
+              memorial bridges for people who lost their pets. Older. Not
+              tech-savvy. He does it because he loves it and it serves people
+              in grief. That is a Ghost deployment.
+            </p>
+
+            <p>
+              Performance Golf: $110M in revenue, 200+ employees, Inc. 5000
+              two years running, Hank Haney on the instructor roster. That is
+              also a Ghost deployment.
+            </p>
+
+            <p>
+              Same 20-minute conversation. Same system. Same person (me and
+              Atlas). The deployment is custom to whatever comes out of that
+              conversation. Some people get their own full Ghost deployment.
+              Some people get plugged into an existing deployment as a backend
+              piece, an upsell, or a flywheel component. Nobody needs to be
+              good at everything. They just need something they are good at and
+              care about.
+            </p>
+
+            <p>
+              That is the model I am building toward: an infrastructure of
+              human beings who each bring something specific, orchestrated
+              through one system. Not a franchise. Not a consulting firm. A
+              machine that connects people to the right piece of the right
+              offer in the right flywheel.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <div className="section-divider" />
+
+      {/* ============================================
+          HOW IT MAPS TO YOUR NHB POST
+          ============================================ */}
+      <section className="bg-white py-16 sm:py-24">
+        <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
+          <p className="font-[family-name:var(--font-playfair)] text-2xl font-bold leading-tight text-navy sm:text-3xl">
+            Your NHB post. My system. Line by line.
+          </p>
+          <p className="mt-4 text-base leading-relaxed text-foreground/70">
+            You wrote a spec sheet for what I already built.
+          </p>
+
+          <div className="mt-10 space-y-4">
+            <div className="rounded-lg border border-border bg-warm px-5 py-4">
+              <p className="text-sm font-semibold text-navy">
+                &ldquo;Claude Code fluent, builds workflows and
+                automations&rdquo;
+              </p>
+              <p className="mt-2 text-sm text-muted-foreground">
+                Claude Code is the engine. 40 custom skills, multi-agent
+                parallel execution, persistent memory across sessions. Not a
+                ChatGPT subscription. Engineered infrastructure with SOPs.
+              </p>
+            </div>
+
+            <div className="rounded-lg border border-border bg-warm px-5 py-4">
+              <p className="text-sm font-semibold text-navy">
+                &ldquo;Take a founder from 5-6 priorities to 2-3&rdquo;
+              </p>
+              <p className="mt-2 text-sm text-muted-foreground">
+                First Principle #13: &ldquo;Pick the top three and hit them
+                and build them and make them then next.&rdquo; Hard gate in
+                the system: max 3 active items per deployment. Adding a
+                fourth requires completing or killing one first.
+              </p>
+            </div>
+
+            <div className="rounded-lg border border-border bg-warm px-5 py-4">
+              <p className="text-sm font-semibold text-navy">
+                &ldquo;Turn messy inputs into clean, decision-ready
+                summaries&rdquo;
+              </p>
+              <p className="mt-2 text-sm text-muted-foreground">
+                The Ghost Intake system. Any input (Slack, email, files,
+                voice notes) gets coded into 8 categories and routed
+                automatically. 459+ files processed in a single session.
+                What comes out is a brief, not a pile.
+              </p>
+            </div>
+
+            <div className="rounded-lg border border-border bg-warm px-5 py-4">
+              <p className="text-sm font-semibold text-navy">
+                &ldquo;Proactive by default. Stay two steps ahead.&rdquo;
+              </p>
+              <p className="mt-2 text-sm text-muted-foreground">
+                Atlas does not wait for instructions. The system has session
+                protocols (SITREP at start, Ghost Out at close), an execution
+                tracker, a deployment registry, and proactive gap detection
+                built into every session. I audit what was missed and fix it
+                before the next session starts.
+              </p>
+            </div>
+
+            <div className="rounded-lg border border-border bg-warm px-5 py-4">
+              <p className="text-sm font-semibold text-navy">
+                &ldquo;Thinks in inputs, outputs, and decision points&rdquo;
+              </p>
+              <p className="mt-2 text-sm text-muted-foreground">
+                You use TAO (Triggers, Actions, Outcomes) and FIT
+                (Frustration, Importance, Time). I already adopted FIT for
+                The Ghost Factory roadmap. The entire deployment pipeline
+                (Capture, Validate, Position, Build, Recruit, Launch, Scale,
+                Exit) is a TAO framework that actually executes. Every skill
+                file is a codified workflow with autonomous execution.
+              </p>
+            </div>
+
+            <div className="rounded-lg border border-border bg-warm px-5 py-4">
+              <p className="text-sm font-semibold text-navy">
+                &ldquo;Principles over prompts&rdquo;
+              </p>
+              <p className="mt-2 text-sm text-muted-foreground">
+                18 hard-coded First Principles that override everything.
+                &ldquo;The simplest solution that works is the correct
+                solution.&rdquo; &ldquo;Complexity is debt.&rdquo;
+                &ldquo;Build for exit from Day 1.&rdquo; These are not
+                guidelines. They are non-negotiable engineering standards.
+              </p>
+            </div>
+
+            <div className="rounded-lg border border-border bg-warm px-5 py-4">
+              <p className="text-sm font-semibold text-navy">
+                &ldquo;Not a task-taker. A leverage role.&rdquo;
+              </p>
+              <p className="mt-2 text-sm text-muted-foreground">
+                The Ghost Factory is infrastructure. Not an assistant. Not an
+                agency. A system that runs businesses. The distinction matters
+                because what you described is not a person. It is a machine
+                that amplifies one person into many.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div className="section-divider" />
+
+      {/* ============================================
+          THE SPEED
+          ============================================ */}
+      <section className="bg-warm py-16 sm:py-20">
+        <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
+          <p className="font-[family-name:var(--font-playfair)] text-2xl font-bold leading-tight text-navy sm:text-3xl">
+            Speed is a feature.
+          </p>
+
+          <div className="mt-8 grid gap-4 sm:grid-cols-2">
+            <div className="rounded-xl border border-border bg-white p-5">
+              <p className="font-[family-name:var(--font-playfair)] text-xl font-bold text-navy">
+                9 pages
+              </p>
+              <p className="mt-1 text-sm text-muted-foreground">
+                The entire gitm.ai flagship site. Built and deployed to
+                production in a single session.
+              </p>
+            </div>
+            <div className="rounded-xl border border-border bg-white p-5">
+              <p className="font-[family-name:var(--font-playfair)] text-xl font-bold text-navy">
+                10 days
+              </p>
+              <p className="mt-1 text-sm text-muted-foreground">
+                RTD went from a recorded interview to a live calculator with
+                personalized reports, email automation, and payment
+                processing.
+              </p>
+            </div>
+            <div className="rounded-xl border border-border bg-white p-5">
+              <p className="font-[family-name:var(--font-playfair)] text-xl font-bold text-navy">
+                Hours
+              </p>
+              <p className="mt-1 text-sm text-muted-foreground">
+                This page. Custom-built for you within hours of your NHB
+                post surfacing through Amber. That is the system in action.
+              </p>
+            </div>
+            <div className="rounded-xl border border-border bg-white p-5">
+              <p className="font-[family-name:var(--font-playfair)] text-xl font-bold text-navy">
+                3 months
+              </p>
+              <p className="mt-1 text-sm text-muted-foreground">
+                Total build time for the entire Ghost Factory infrastructure.
+                40 skills, 130+ files, session protocols, deployment pipeline,
+                multi-agent execution. Built from scratch.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div className="section-divider" />
+
+      {/* ============================================
+          WARM PATHS
+          ============================================ */}
+      <section className="bg-white py-16 sm:py-20">
+        <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
+          <p className="font-[family-name:var(--font-playfair)] text-2xl font-bold leading-tight text-navy sm:text-3xl">
+            I am not a stranger to your world.
+          </p>
+
+          <div className="mt-8 space-y-5 text-base leading-relaxed text-foreground/80">
+            <p>
+              Mario Castelli wrote copy for Performance Golf. He is a friend
+              of mine. John Benson wrote PG copy too. I was in John&apos;s
+              mastermind and was one of the first 100 people in his AI
+              copywriting group. Six years in golf high-ticket sales through
+              Dean Chitren. Two active golf deployments with real results.
+            </p>
+
+            <p>
+              I am not pitching from the outside. I already live in the world
+              you operate in.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <div className="section-divider" />
+
+      {/* ============================================
+          CTA
           ============================================ */}
       <section className="navy-gradient py-16 sm:py-24">
         <div className="mx-auto max-w-3xl px-4 text-center sm:px-6 lg:px-8">
           <h2 className="font-[family-name:var(--font-playfair)] text-2xl font-bold text-white sm:text-3xl lg:text-4xl">
-            I do not know if this would be good for you or helpful for you.
-            But it is worth a shot.
+            I do not know exactly what the right arrangement looks like yet.
+            That is what the conversation is for.
           </h2>
-          <p className="mx-auto mt-4 max-w-lg text-base leading-relaxed text-white/60">
-            No pitch. No deck. Just a conversation about what Performance Golf
-            needs and whether this system can deliver it. Or reply to Amber and
-            we will set something up directly.
+          <p className="mx-auto mt-6 max-w-lg text-base leading-relaxed text-white/60">
+            You might want your own personal Ghost Factory. You might want
+            deployments for Performance Golf. You might want the executive
+            function system for your team. I have no idea until we talk. The
+            page shows you the system. The call figures out the rest.
           </p>
           <div className="mt-10">
             <button
@@ -342,6 +689,9 @@ export default function BrixtonPage() {
               Book a Call with Jason
             </button>
           </div>
+          <p className="mt-4 text-sm text-white/40">
+            Or reply to Amber and we will set something up directly.
+          </p>
         </div>
       </section>
 
