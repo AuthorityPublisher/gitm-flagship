@@ -259,6 +259,20 @@ export default function BrixtonPage() {
                 find a way to scale it, I will find a bunch of money for
                 it.&rdquo;
               </p>
+              <a
+                href="https://rethinkdieting.org"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-3 inline-flex text-sm font-semibold text-gold-dark transition-colors hover:text-navy"
+              >
+                rethinkdieting.org &rarr;
+              </a>
+              <div className="mt-4">
+                <VidalyticsEmbed videoId="GRX2dadxln68ziGE" />
+                <p className="mt-2 text-xs text-muted-foreground">
+                  Alan &amp; Angie tell their story
+                </p>
+              </div>
             </div>
 
             {/* TCF */}
@@ -282,6 +296,14 @@ export default function BrixtonPage() {
                 revenue plus $300/month recurring. Model proved on
                 transaction one.
               </p>
+              <a
+                href="https://thecleanupfirm.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-3 inline-flex text-sm font-semibold text-gold-dark transition-colors hover:text-navy"
+              >
+                thecleanupfirm.com &rarr;
+              </a>
             </div>
 
             {/* AP / WPI */}
@@ -324,8 +346,16 @@ export default function BrixtonPage() {
                 pathogens. Purpose-built for naturopaths, chiropractors, and
                 integrative medicine practitioners. No hardware required
                 (unlike the $5K+ systems currently on the market). Next.js,
-                MongoDB Atlas, Vercel. Live at wellnesspi.com.
+                MongoDB Atlas, Vercel.
               </p>
+              <a
+                href="https://wellnesspi.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-3 inline-flex text-sm font-semibold text-gold-dark transition-colors hover:text-navy"
+              >
+                wellnesspi.com &rarr;
+              </a>
             </div>
           </div>
 
@@ -396,9 +426,16 @@ export default function BrixtonPage() {
                 recovery breathing techniques into a golf performance method
                 and won the 2025 VGA National Championship (Wounded Veteran
                 B Flight). That methodology became Golf Breath Mastery:
-                a 50/50 Authority Publisher partnership. Waitlist at
-                droptenstrokes.com/chase.
+                a 50/50 Authority Publisher partnership.
               </p>
+              <a
+                href="https://droptenstrokes.com/chase"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-3 inline-flex text-sm font-semibold text-gold-dark transition-colors hover:text-navy"
+              >
+                droptenstrokes.com/chase &rarr;
+              </a>
             </div>
           </div>
 
