@@ -296,7 +296,7 @@ export default function BrixtonPage() {
             <button
               type="button"
               onClick={() => setExpanded(true)}
-              className="inline-flex items-center gap-2 rounded-lg border-2 border-gold/30 bg-warm px-8 py-4 text-base font-semibold text-navy transition-all hover:border-gold hover:shadow-md cursor-pointer"
+              className="gold-gradient inline-flex items-center gap-2 rounded-lg px-10 py-5 text-lg font-bold text-navy shadow-lg shadow-gold/20 transition-all hover:shadow-xl hover:shadow-gold/30 hover:scale-[1.02] cursor-pointer animate-pulse"
             >
               See the deployments, proof, and full breakdown
               <svg
