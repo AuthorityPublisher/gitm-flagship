@@ -64,6 +64,16 @@ export default function RootLayout({
         <main>{children}</main>
         <Footer />
         <Script
+          id="vidalytics-config"
+          strategy="beforeInteractive"
+        >
+          {`
+            window._vidalytics = window._vidalytics || {};
+            window._vidalytics.global = window._vidalytics.global || {};
+            window._vidalytics.global.config = { hasCrossDomainLinks: false };
+          `}
+        </Script>
+        <Script
           src="https://fast.vidalytics.com/js/global.min.js"
           id="vid_glb_S99KMyNq"
           strategy="afterInteractive"
