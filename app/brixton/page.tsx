@@ -55,7 +55,7 @@ export default function BrixtonPage() {
           </p>
           <p className="mt-3 text-base leading-relaxed text-foreground/80">
             No pitch. Just the real story of how this system came together
-            and why it might matter for Performance Golf.
+            and why it might matter for you and Performance Golf.
           </p>
 
           <div className="mx-auto mt-8 max-w-sm">
@@ -84,8 +84,9 @@ export default function BrixtonPage() {
 
           <div className="mt-8 space-y-5 text-base leading-relaxed text-foreground/80">
             <p>
-              The Ghost Factory is an executive function operating system I
-              built on top of Claude Code. It runs my businesses. All of them.
+              I call it The Ghost Factory. Ghost as in Holy Spirit, not
+              Halloween. It is an executive function operating system I built
+              on top of Claude Code. It runs my businesses. All of them.
               Simultaneously. 40 custom skills, 130+ operational files, session
               protocols for starting and closing work, an intake system that
               processes any input (Slack messages, voice notes, email threads,
@@ -93,12 +94,12 @@ export default function BrixtonPage() {
             </p>
 
             <p>
-              I call it the 90/10 model. Atlas (that is what I named my Claude
-              Code instance) handles 90% of the execution: research,
-              positioning, copy, builds, automation, compliance, documentation.
-              I handle 10%: strategy, direction, final approvals, and the
-              conversations that matter. The system keeps me focused on two or
-              three priorities instead of drowning in five or six.
+              Atlas is what I named my Claude Code instance. Atlas handles 90%
+              of the execution: research, positioning, copy, builds,
+              automation, compliance, documentation. I handle 10%: strategy,
+              direction, final approvals, and the conversations that matter.
+              The system keeps me focused on two or three priorities instead
+              of drowning in five or six.
             </p>
 
             <p>
@@ -107,8 +108,7 @@ export default function BrixtonPage() {
               &ldquo;turns messy inputs into clean, decision-ready
               summaries,&rdquo; who is &ldquo;proactive by default.&rdquo; You
               asked for someone fluent in Claude Code who thinks in workflows,
-              agents, and automations. I am not applying for a job. I am
-              showing you something that already exists and works.
+              agents, and automations. This already exists and it works.
             </p>
           </div>
         </div>
@@ -126,7 +126,7 @@ export default function BrixtonPage() {
           </p>
           <p className="mt-4 text-base leading-relaxed text-foreground/80">
             Amber sent me your post a few hours ago. I recognized the
-            alignment immediately. Within hours, The Ghost Factory was
+            alignment immediately. Within minutes, The Ghost Factory was
             custom-building this page specifically for you. That is the speed.
             Not because it is rushed, but because the infrastructure already
             exists. I give direction, Atlas executes. Here is what that looks
@@ -242,23 +242,69 @@ export default function BrixtonPage() {
                 Rethink Dieting
               </p>
               <p className="mt-1 text-sm font-semibold text-navy">
-                Math-based weight loss. 10 days from interview to live.
+                Math-based weight loss. 10 days from first
+                interview to live deployment.
               </p>
               <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
                 Alan Thomas lost 129 pounds in 260 days by posting his scale
                 on Facebook every single morning. His method is not a diet.
                 It is math: know your burn rate, know your intake, know
                 exactly where you will be on any given date. His wife Angie
-                lost 63 pounds using the same system. The Ghost Factory
-                extracted their methodology and in 10 days deployed a
-                personalized BMR calculator that generates custom reports, a
-                full email automation system, Stripe payment processing, and
-                19 product tier packages. This is an 80/20 joint venture with
-                a $1B exit vision (Weight Watchers-level scale) and a PE
-                investor who has been telling Alan for four years: &ldquo;You
-                find a way to scale it, I will find a bunch of money for
-                it.&rdquo;
+                lost 63 pounds using the same system. I interviewed them,
+                extracted their methodology, and deployed everything custom
+                to their business. This is what Atlas built in 10 days:
               </p>
+
+              <div className="mt-4 grid gap-3 sm:grid-cols-2">
+                <div className="rounded-lg bg-warm px-4 py-3">
+                  <p className="text-xs font-bold uppercase tracking-wider text-gold-dark">Strategy</p>
+                  <ul className="mt-2 space-y-1 text-xs text-muted-foreground">
+                    <li>560-line COMPANY_DNA.md (full methodology extraction)</li>
+                    <li>Positioning framework: ONE WORD = &ldquo;Certainty&rdquo;</li>
+                    <li>Validation report (82/100 viability score)</li>
+                    <li>5-phase go-to-market plan</li>
+                    <li>80/20 JV partnership structure</li>
+                  </ul>
+                </div>
+                <div className="rounded-lg bg-warm px-4 py-3">
+                  <p className="text-xs font-bold uppercase tracking-wider text-gold-dark">Technology</p>
+                  <ul className="mt-2 space-y-1 text-xs text-muted-foreground">
+                    <li>Personalized BMR/TDEE calculator (5,303 lines)</li>
+                    <li>Custom PDF report generation per user</li>
+                    <li>Stripe payment processing</li>
+                    <li>GHL CRM integration via webhooks</li>
+                    <li>Google Sheets lead queue with auto-processing</li>
+                  </ul>
+                </div>
+                <div className="rounded-lg bg-warm px-4 py-3">
+                  <p className="text-xs font-bold uppercase tracking-wider text-gold-dark">Content &amp; Copy</p>
+                  <ul className="mt-2 space-y-1 text-xs text-muted-foreground">
+                    <li>19 digital product packages ($7 to $97 tiers)</li>
+                    <li>7-email nurture sequence</li>
+                    <li>30-day social media plan with 30 pre-written posts</li>
+                    <li>Platform profiles (FB, IG, YT, LinkedIn, TikTok)</li>
+                    <li>Full compliance review (Florida Dietetics Act + FTC)</li>
+                  </ul>
+                </div>
+                <div className="rounded-lg bg-warm px-4 py-3">
+                  <p className="text-xs font-bold uppercase tracking-wider text-gold-dark">Operations</p>
+                  <ul className="mt-2 space-y-1 text-xs text-muted-foreground">
+                    <li>Deployment SOP (one-command deploy to production)</li>
+                    <li>Task Master with 46 prioritized tasks for Alan</li>
+                    <li>VSL script + Vidalytics video hosting</li>
+                    <li>Domain, DNS, hosting, SSL all configured</li>
+                    <li>Operator share-ready package (single handoff doc)</li>
+                  </ul>
+                </div>
+              </div>
+
+              <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
+                All custom to Alan and Angie. None of it templated. A PE
+                investor has been telling Alan for four years: &ldquo;You
+                find a way to scale it, I will find a bunch of money for
+                it.&rdquo; This is the way.
+              </p>
+
               <a
                 href="https://rethinkdieting.org"
                 target="_blank"

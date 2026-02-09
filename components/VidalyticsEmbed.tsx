@@ -2,8 +2,6 @@
 
 import { useEffect, useRef } from "react";
 
-const ACCOUNT_ID = "S99KMyNq";
-
 interface VidalyticsEmbedProps {
   videoId: string;
   className?: string;
@@ -17,42 +15,41 @@ export function VidalyticsEmbed({
   aspectRatio = "56.25%",
 }: VidalyticsEmbedProps) {
   const containerRef = useRef<HTMLDivElement>(null);
-  const scriptLoaded = useRef(false);
 
   useEffect(() => {
-    if (scriptLoaded.current) return;
-    if (!containerRef.current) return;
-
-    // Strategy 1: Try the global script rescan
+    // The Vidalytics global script (loaded in layout.tsx) exposes
+    // window.vidalytics_embed (SINGULAR, not plural).
+    // It scans for divs with id="vidalytics_embed_VIDEO_ID" and injects players.
+    // In React, components mount after the initial scan, so we poll
+    // for the function and trigger a rescan once available.
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
     const win = window as any;
-    if (typeof win.vidalytics_embeds === "function") {
-      win.vidalytics_embeds();
-      // Check if it actually injected something after a moment
-      setTimeout(() => {
-        if (
-          containerRef.current &&
-          containerRef.current.children.length === 0
-        ) {
-          loadPerVideoScript();
-        }
-      }, 1000);
-    } else {
-      // Strategy 2: Load the per-video embed script directly
-      loadPerVideoScript();
+
+    function tryRescan() {
+      if (typeof win.vidalytics_embed === "function") {
+        win.vidalytics_embed();
+        return true;
+      }
+      return false;
     }
 
-    function loadPerVideoScript() {
-      if (scriptLoaded.current) return;
-      scriptLoaded.current = true;
+    if (tryRescan()) return;
 
-      const script = document.createElement("script");
-      script.src = `https://fast.vidalytics.com/embeds/${ACCOUNT_ID}/${videoId}`;
-      script.async = true;
-      containerRef.current?.parentElement?.appendChild(script);
-    }
+    let attempts = 0;
+    const maxAttempts = 60; // 60 x 250ms = 15 seconds
+    const interval = setInterval(() => {
+      attempts++;
+      if (tryRescan()) {
+        clearInterval(interval);
+      } else if (attempts >= maxAttempts) {
+        clearInterval(interval);
+        console.warn(
+          `Vidalytics global script did not load within 15s. Video "${videoId}" may not render.`
+        );
+      }
+    }, 250);
 
-    return () => {};
+    return () => clearInterval(interval);
   }, [videoId]);
 
   return (
