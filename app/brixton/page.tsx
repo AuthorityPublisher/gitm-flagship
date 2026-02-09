@@ -408,8 +408,8 @@ export default function BrixtonPage() {
           {/* Dr. Nick video */}
           <div className="mt-12">
             <p className="font-[family-name:var(--font-playfair)] text-xl font-bold text-navy">
-              Dr. Nick had 297K Instagram followers and no revenue
-              infrastructure. This is what the system built for him.
+              Dr. Nick had 297K Instagram followers and zero revenue
+              infrastructure. Here is what the system built.
             </p>
             <div className="mt-6">
               <VidalyticsEmbed
@@ -757,8 +757,7 @@ export default function BrixtonPage() {
       <section className="navy-gradient py-16 sm:py-24">
         <div className="mx-auto max-w-3xl px-4 text-center sm:px-6 lg:px-8">
           <h2 className="font-[family-name:var(--font-playfair)] text-2xl font-bold text-white sm:text-3xl lg:text-4xl">
-            I do not know exactly what the right arrangement looks like yet.
-            That is what the conversation is for.
+            I built the system. The call figures out how it fits you.
           </h2>
           <p className="mx-auto mt-6 max-w-lg text-base leading-relaxed text-white/60">
             You might want your own personal Ghost Factory. You might want
