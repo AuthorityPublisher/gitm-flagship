@@ -34,8 +34,9 @@ export default function BrixtonPage() {
             Built for Brixton Albert
           </p>
           <h1 className="mt-4 text-balance text-center font-[family-name:var(--font-playfair)] text-3xl font-bold tracking-tight text-white sm:text-4xl lg:text-5xl">
-            Amber sent me your NHB post. I already built what you&apos;re
-            looking for.
+            Amber sent me your NHB post.
+            <br />
+            I already built what you&apos;re looking for.
           </h1>
 
           <div className="mx-auto mt-10 max-w-sm">
